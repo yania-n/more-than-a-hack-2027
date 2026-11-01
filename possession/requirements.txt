@@ -1,0 +1,4 @@
+# The model itself needs only numpy (already in the root requirements.txt).
+numpy
+# Only for the plots in possession/report.py (Step 0 histograms, EM curves).
+matplotlib
