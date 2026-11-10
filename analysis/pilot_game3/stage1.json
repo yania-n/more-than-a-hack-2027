@@ -1,0 +1,73 @@
+{
+ "provided_ball": {
+  "visible_share": 0.593074274347369,
+  "n_gaps": 150,
+  "gap_len_pct": [
+   11.8,
+   152.25,
+   268.0,
+   526.5,
+   845.2999999999995,
+   2618.7899999999845
+  ],
+  "gap_len_mean": 430.9533333333333,
+  "vis_run_mean": 632.3087248322148
+ },
+ "play_blocks": [
+  [
+   1,
+   360,
+   69592
+  ],
+  [
+   2,
+   70089,
+   143551
+  ]
+ ],
+ "degraded": {
+  "degraded_seed0": {
+   "rate": 0.0003637422928401333,
+   "visible_share": 0.5930789931042215,
+   "extra_gap_share": 0.13141203276063798
+  },
+  "degraded_seed1": {
+   "rate": 0.00047838937818574007,
+   "visible_share": 0.5930789931042215,
+   "extra_gap_share": 0.13141203276063798
+  }
+ },
+ "ball_visible_share": {
+  "asis": 0.6828082076582385,
+  "degraded_seed0": 0.5930789931042215,
+  "degraded_seed1": 0.5930789931042215
+ },
+ "game3_v1_constants": {
+  "asis": {
+   "radius": 1.2731121229273588,
+   "carry": 5.946499617024492
+  },
+  "degraded_seed0": {
+   "radius": 1.2367858118156374,
+   "carry": 5.946499617024492
+  },
+  "degraded_seed1": {
+   "radius": 1.2838540298398713,
+   "carry": 5.946499617024492
+  }
+ },
+ "md5": {
+  "smooth50_asis": "4c8dd092117427bb03d938435ce34a29",
+  "v1_refit_asis": "3a8eb5c8d532268c4b2ead523a854c86",
+  "v1_transfer_asis": "aa40f550f03f7cae9500eb24d042fe14",
+  "smooth50_degraded_seed0": "7be8c20014e83a042108217d5ef764a5",
+  "v1_refit_degraded_seed0": "6211f97b925d522cb241ba061b214643",
+  "v1_transfer_degraded_seed0": "d29fd7a8b2db75620b4472e1f6559ed2",
+  "smooth50_degraded_seed1": "024021268b7ba722310f7c6955c9bce6",
+  "v1_refit_degraded_seed1": "27e25f006b7b667d49b2aa29488676a7",
+  "v1_transfer_degraded_seed1": "bef581b2ab7d5c36bf4806a011c3ad42",
+  "labels_primary": "1a5e88388da10430d09c86b1dc55e922",
+  "labels_S1": "ad4df50a9b0924743619fb2f855114c2",
+  "labels_S2": "388f2e2c64ea1708aa3874a287c18b6c"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "smooth50_provided": {
+  "labels_identical": true,
+  "mine_md5": [
+   "23924df8d47236bfacf527d93079fc66",
+   "23924df8d47236bfacf527d93079fc66"
+  ],
+  "repo_md5": [
+   "68ab9548222e7fdd435757909442b1ea",
+   "23924df8d47236bfacf527d93079fc66"
+  ],
+  "n_differing": 0
+ },
+ "v1_provided": {
+  "md5": "83b587d7b36a665a69f2eaf88566e60b",
+  "expected": "83b587d7b36a665a69f2eaf88566e60b",
+  "matches": true
+ },
+ "rederive_identical": {
+  "flight": true,
+  "gap": true,
+  "dwell": true
+ },
+ "build_with_edges_identical": true,
+ "transfer_path_reproduces_v1": true,
+ "v1_constants_provided": {
+  "radius": 1.913903461879167,
+  "carry": 6.439982328414916
+ }
+}

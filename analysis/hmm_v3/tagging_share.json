@@ -1,0 +1,57 @@
+{
+ "home_name": "Barcelona",
+ "away_name": "Atletic Club",
+ "instances_used": 462,
+ "instances_na_excluded": 34,
+ "instances_defending_excluded": 142,
+ "frames_home": 82853,
+ "frames_away": 57105,
+ "frames_both": 16399,
+ "frames_union": 123559,
+ "graded_frames": 158857,
+ "covered_share_of_graded": 0.7778001598922302,
+ "home_share_union_of_attributed": 0.5919847382786264,
+ "home_share_exclusive_only": 0.6201381112355356,
+ "instances_by_code": {
+  "players in the box": {
+   "H": 51,
+   "A": 46
+  },
+  "ball in final third": {
+   "H": 54,
+   "A": 39
+  },
+  "ball in the box": {
+   "H": 42,
+   "A": 30
+  },
+  "goals": {
+   "H": 2,
+   "A": 2
+  },
+  "progression": {
+   "H": 47,
+   "A": 19
+  },
+  "attacking transition": {
+   "H": 13,
+   "A": 11
+  },
+  "build up": {
+   "H": 15,
+   "A": 7
+  },
+  "long ball": {
+   "H": 9,
+   "A": 20
+  },
+  "set pieces": {
+   "H": 16,
+   "A": 11
+  },
+  "creating chances": {
+   "H": 19,
+   "A": 9
+  }
+ }
+}

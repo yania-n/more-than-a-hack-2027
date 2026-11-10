@@ -1,0 +1,4 @@
+83b587d7b36a665a69f2eaf88566e60b *submissions/hmm_v1.csv
+b1551bda15fa9c0ea02574692758cf0a *submissions/hmm_v2a.csv
+b8d1dc4d7b81c2241ea26ca13ba927a8 *submissions/hmm_v2b.csv
+4a2d28bbc43b35c9c128717a53b5a938 *submissions/hmm_v2b_p95.csv

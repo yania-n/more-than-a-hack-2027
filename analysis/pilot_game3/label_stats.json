@@ -1,0 +1,92 @@
+{
+ "primary": {
+  "valid_runs": [
+   [
+    360,
+    69593
+   ],
+   [
+    70089,
+    143552
+   ]
+  ],
+  "graded_frames": 142696,
+  "graded_minutes": 95.13066666666667,
+  "possessions": 388,
+  "possessions_per_min": 4.078600661546224,
+  "mean_duration_s": 10.789793814432992,
+  "median_duration_s": 5.300000000000001,
+  "pct_lt_2s": 24.484536082474225,
+  "D_share_pct": 26.65456635084375,
+  "median_D_stretch_s": 11.52,
+  "home_share_of_alive_pct": 50.91008111904148,
+  "transitions_per_min": 5.003644110556708,
+  "reversal_rate_3s_pct": 22.972972972972972,
+  "direct_handovers": 296
+ },
+ "S1": {
+  "valid_runs": [
+   [
+    360,
+    69593
+   ],
+   [
+    70089,
+    143552
+   ]
+  ],
+  "graded_frames": 142696,
+  "graded_minutes": 95.13066666666667,
+  "possessions": 379,
+  "possessions_per_min": 3.983993945170152,
+  "mean_duration_s": 11.046015831134566,
+  "median_duration_s": 5.48,
+  "pct_lt_2s": 23.218997361477573,
+  "D_share_pct": 26.65456635084375,
+  "median_D_stretch_s": 11.52,
+  "home_share_of_alive_pct": 52.10727969348659,
+  "transitions_per_min": 4.909037394180635,
+  "reversal_rate_3s_pct": 24.041811846689896,
+  "direct_handovers": 287
+ },
+ "S2": {
+  "valid_runs": [
+   [
+    360,
+    69593
+   ],
+   [
+    70089,
+    143552
+   ]
+  ],
+  "graded_frames": 142696,
+  "graded_minutes": 95.13066666666667,
+  "possessions": 532,
+  "possessions_per_min": 5.592308123563379,
+  "mean_duration_s": 7.869248120300753,
+  "median_duration_s": 3.06,
+  "pct_lt_2s": 38.15789473684211,
+  "D_share_pct": 26.65456635084375,
+  "median_D_stretch_s": 11.52,
+  "home_share_of_alive_pct": 52.24295582881876,
+  "transitions_per_min": 6.517351572573863,
+  "reversal_rate_3s_pct": 43.40909090909091,
+  "direct_handovers": 440
+ },
+ "dead_stretch_end_events_primary": {
+  "PASS | SET PIECE throw in": 43,
+  "PASS | SET PIECE free kick,indirect": 19,
+  "SET PIECE throw in": 6,
+  "SET PIECE corner kick": 4,
+  "PASS | SET PIECE corner kick": 4,
+  "PASS goal kick | RECOVERY": 3,
+  "RECOVERY": 3,
+  "PASS | SET PIECE kick off": 2,
+  "SET PIECE free kick,indirect": 2,
+  "SET PIECE direct,free kick | SHOT on target,saved": 1,
+  "SET PIECE retaken,throw in": 1,
+  "CARRY | PASS | RECOVERY": 1,
+  "SET PIECE free kick,indirect,retaken": 1
+ }
+}

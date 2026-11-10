@@ -1,0 +1,24 @@
+start,end,dur_s,type,ball_present_%,ball_to_home_m,ball_to_away_m,mean_speed_mps,frames_to_gt_transition,main_cause,smart_tagging
+11351,11467,4.7,H->A (wrong team),100.0,5.5,2.6,2.84,0,nearest player is the other team (98%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]; LONG BALL [A]
+11553,11623,2.8,A->H (wrong team),100.0,2.2,2.9,3.31,0,nearest player is the other team (76%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]
+11704,11800,3.9,H->A (wrong team),100.0,5.5,3.2,3.41,80,nearest player is the other team (90%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]
+12627,12664,1.5,H->A (wrong team),100.0,4.3,3.3,3.37,1,nearest player is the other team (63%),BALL IN FINAL THIRD [A]; PROGRESSION [H]; ATTACKING TRANSITION [A]
+12751,12850,4.0,A->H (wrong team),80.0,2.8,4.0,3.89,1,nearest player is the other team (59%),BALL IN FINAL THIRD [A]; ATTACKING TRANSITION [A]
+12851,12880,1.2,D->H (dead->alive),0.0,,,2.66,0,ball missing; vote bleeds alive label in (100%),-
+12929,12988,2.4,D->H (dead->alive),17.0,1.8,6.6,1.22,1,ball missing; vote bleeds alive label in (83%),-
+13657,13703,1.9,H->A (wrong team),100.0,4.0,1.6,2.68,1,nearest player is the other team (81%),PROGRESSION [H]
+14207,14252,1.8,H->A (wrong team),100.0,6.8,5.3,2.79,422,nearest player is the other team (63%),BALL IN FINAL THIRD [H]
+15649,15711,2.5,A->H (wrong team),100.0,2.1,4.9,2.27,55,nearest player is the other team (87%),PLAYERS IN THE BOX [H]
+15766,15798,1.3,H->A (wrong team),100.0,2.8,1.3,3.13,0,nearest player is the other team (100%),PLAYERS IN THE BOX [H]
+15841,15888,1.9,A->H (wrong team),100.0,4.2,8.9,2.72,1,nearest player is the other team (75%),PLAYERS IN THE BOX [H]
+15889,16276,15.5,D->H (dead->alive),100.0,6.0,23.0,1.22,0,ball seen during stoppage (100%),PLAYERS IN THE BOX [H]
+16277,16399,4.9,D->A (dead->alive),100.0,6.4,1.1,0.83,1,ball seen during stoppage (100%),-
+16628,16668,1.6,A->H (wrong team),44.0,12.8,8.6,3.5,228,ball missing; vote inherits neighbour label (56%),-
+16696,16727,1.3,A->D (alive->dead),0.0,,,3.56,296,ball missing for whole +-50 window (100%),-
+17097,17228,5.3,A->D (alive->dead),0.0,,,2.31,65,ball missing for whole +-50 window (100%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]
+17229,17292,2.6,A->H (wrong team),22.0,2.4,4.5,1.96,1,ball missing; vote inherits neighbour label (78%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]
+17382,17449,2.7,D->A (dead->alive),100.0,7.0,3.8,1.2,2,ball seen during stoppage (100%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]
+17450,17509,2.4,D->H (dead->alive),17.0,7.7,11.5,1.33,70,ball missing; vote bleeds alive label in (83%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]
+17776,17837,2.5,D->A (dead->alive),19.0,8.8,2.7,0.93,1,ball missing; vote bleeds alive label in (81%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; SET PIECES / Free Kick [A]; CREATING CHANCES [A]
+17997,18026,1.2,A->H (wrong team),100.0,2.8,4.6,2.32,1,nearest player is the other team (63%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; SET PIECES / Free Kick [A]; CREATING CHANCES [A]
+18027,18388,14.5,D->H (dead->alive),100.0,3.0,17.8,2.13,0,ball seen during stoppage (100%),PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; BUILD UP [H]; SET PIECES / Goal Kick [H]; SET PIECES / Free Kick [A]; CREATING CHANCES [A]

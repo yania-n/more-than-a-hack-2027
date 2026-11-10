@@ -1,0 +1,33 @@
+# analysis/ holds our reports and small artifacts. This file decides what goes to GitHub.
+#
+# SHARED:      reports, pre-registrations, plots, small result tables, analysis scripts.
+# NOT SHARED:  (1) anything that reconstructs the provided tracking -- the parsed caches --
+#                  because RULES.md forbids publishing tracking exports;
+#              (2) per-frame labels, predictions and converted files derived from Metrica's
+#                  sample games -- the commands in each REPORT.md regenerate them;
+#              (3) logs and pickles.
+# Later lines win over earlier ones, so the ignores below override the allow-list.
+
+*
+!.gitignore
+!*/
+!*.md
+!*.png
+!*.py
+!*.json
+!*.txt
+!*.csv
+
+cache/
+raw/
+tmp/
+predictions/
+labels/
+labels_*.csv
+eval_out/reports/
+**/validate/*.csv
+events_definitions.txt
+__pycache__/
+*.npz
+*.pkl
+*.log

@@ -1,0 +1,19 @@
+| metric | baseline_smooth50 | hmm_v1 | baseline_raw | baseline_smooth25 | baseline_smooth125 |
+|---|---:|---:|---:|---:|---:|
+| possessions | 594.00 | 563.00 | 1949.00 | 746.00 | 398.00 |
+| possessions_per_min | 5.61 | 5.32 | 18.40 | 7.04 | 3.76 |
+| median_possession_s | 4.60 | 4.40 | 0.92 | 3.04 | 8.14 |
+| pct_possessions_lt_2s | 31.31 | 26.64 | 69.32 | 34.32 | 27.64 |
+| transitions_per_min | 6.85 | 6.67 | 19.80 | 8.28 | 4.49 |
+| reversal_rate_3s_pct | 29.50 | 36.75 | 76.94 | 42.74 | 26.10 |
+| D_share_pct | 32.34 | 38.68 | 40.69 | 36.49 | 22.33 |
+| median_D_stretch_s | 7.56 | 8.80 | 10.72 | 9.56 | 10.88 |
+| restart_D_end_within_2s_pct | 15.52 | 8.62 | 13.79 | 17.24 | 29.31 |
+| restart_any_D_within_2s_pct | 68.97 | 84.48 | 77.59 | 77.59 | 48.28 |
+| n_restarts_graded | 58.00 | 58.00 | 58.00 | 58.00 | 58.00 |
+| ball_outside_labelled_D_pct | 0.00 | 53.91 | 0.00 | 0.00 | 0.00 |
+| n_ball_outside_frames | 3339.00 | 3339.00 | 3339.00 | 3339.00 | 3339.00 |
+| handover_plausible_pct | 32.91 | 36.22 | 29.12 | 36.35 | 25.27 |
+| n_handovers_judged | 395.00 | 392.00 | 1731.00 | 564.00 | 182.00 |
+| n_direct_handovers | 461.00 | 419.00 | 1800.00 | 613.00 | 318.00 |
+| home_share_of_alive_pct | 57.03 | 65.90 | 56.41 | 57.36 | 56.66 |

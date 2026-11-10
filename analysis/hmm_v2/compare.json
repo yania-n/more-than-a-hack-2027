@@ -1,0 +1,122 @@
+{
+ "rows": {
+  "baseline_smooth50": {
+   "possessions": 594,
+   "possessions_per_min": 5.608817993541361,
+   "median_possession_s": 4.6,
+   "pct_possessions_lt_2s": 31.313131313131315,
+   "transitions_per_min": 6.845779537571527,
+   "reversal_rate_3s_pct": 29.50108459869848,
+   "D_share_pct": 32.336000302158546,
+   "median_D_stretch_s": 7.56,
+   "restart_D_end_within_2s_pct": 15.517241379310345,
+   "restart_any_D_within_2s_pct": 68.96551724137932,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 0.0,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 32.91139240506329,
+   "n_handovers_judged": 395,
+   "n_direct_handovers": 461,
+   "home_share_of_alive_pct": 57.034673315409016
+  },
+  "hmm_v1": {
+   "possessions": 563,
+   "possessions_per_min": 5.316101902969337,
+   "median_possession_s": 4.4,
+   "pct_possessions_lt_2s": 26.642984014209592,
+   "transitions_per_min": 6.66637290141448,
+   "reversal_rate_3s_pct": 36.754176610978526,
+   "D_share_pct": 38.6825887433352,
+   "median_D_stretch_s": 8.8,
+   "restart_D_end_within_2s_pct": 8.620689655172415,
+   "restart_any_D_within_2s_pct": 84.48275862068965,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 53.908355795148246,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 36.224489795918366,
+   "n_handovers_judged": 392,
+   "n_direct_handovers": 419,
+   "home_share_of_alive_pct": 65.89567484883017
+  },
+  "hmm_v2a": {
+   "possessions": 213,
+   "possessions_per_min": 2.0112428158658417,
+   "median_possession_s": 11.6,
+   "pct_possessions_lt_2s": 9.389671361502346,
+   "transitions_per_min": 4.0036007226625205,
+   "reversal_rate_3s_pct": 0.0,
+   "D_share_pct": 48.52792133805876,
+   "median_D_stretch_s": 5.6,
+   "restart_D_end_within_2s_pct": 3.4482758620689653,
+   "restart_any_D_within_2s_pct": 87.93103448275862,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 64.12099430967355,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 0.0,
+   "n_handovers_judged": 1,
+   "n_direct_handovers": 1,
+   "home_share_of_alive_pct": 75.28342729952182
+  },
+  "hmm_v2b": {
+   "possessions": 563,
+   "possessions_per_min": 5.316101902969337,
+   "median_possession_s": 4.4,
+   "pct_possessions_lt_2s": 26.642984014209592,
+   "transitions_per_min": 6.66637290141448,
+   "reversal_rate_3s_pct": 36.754176610978526,
+   "D_share_pct": 38.6825887433352,
+   "median_D_stretch_s": 8.8,
+   "restart_D_end_within_2s_pct": 8.620689655172415,
+   "restart_any_D_within_2s_pct": 84.48275862068965,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 53.908355795148246,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 36.224489795918366,
+   "n_handovers_judged": 392,
+   "n_direct_handovers": 419,
+   "home_share_of_alive_pct": 65.88540864619586
+  },
+  "hmm_v2b_p95": {
+   "possessions": 565,
+   "possessions_per_min": 5.3349868120385,
+   "median_possession_s": 4.4,
+   "pct_possessions_lt_2s": 26.902654867256636,
+   "transitions_per_min": 6.685257810483643,
+   "reversal_rate_3s_pct": 36.81710213776722,
+   "D_share_pct": 38.67629377364548,
+   "median_D_stretch_s": 8.8,
+   "restart_D_end_within_2s_pct": 8.620689655172415,
+   "restart_any_D_within_2s_pct": 84.48275862068965,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 53.908355795148246,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 35.69620253164557,
+   "n_handovers_judged": 395,
+   "n_direct_handovers": 421,
+   "home_share_of_alive_pct": 65.90944085734523
+  }
+ },
+ "criteria": {
+  "hmm_v2a": {
+   "a": true,
+   "b": true,
+   "c": false,
+   "e": false,
+   "verdict": "MIXED"
+  },
+  "hmm_v2b": {
+   "a": false,
+   "b": false,
+   "c": true,
+   "e": true,
+   "verdict": "NOT HELPING"
+  },
+  "hmm_v2b_p95": {
+   "a": false,
+   "b": false,
+   "c": true,
+   "e": true,
+   "verdict": "NOT HELPING"
+  }
+ }
+}

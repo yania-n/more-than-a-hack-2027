@@ -1,0 +1,196 @@
+{
+ "step0": {
+  "gmm": {
+   "mu": [
+    1.1585960276936365,
+    2.442433167718214
+   ],
+   "sd": [
+    0.4339080422110798,
+    0.9981275836155015
+   ],
+   "w": [
+    0.5309001555695613,
+    0.4690998444304366
+   ],
+   "ashman_D": 1.668211111201858,
+   "bic_1": 446300.68541088945,
+   "bic_2": 410857.804623017,
+   "ll": -205398.96834756044
+  },
+  "speed_pct": [
+   0.3297257855976524,
+   0.5524911749803869,
+   1.0275232778867212,
+   1.521242960114614,
+   2.316354042038729,
+   3.6687417276059273,
+   4.935124613616282
+  ],
+  "ball_visible_graded": 0.593074274347369,
+  "flight_share": 0.3969792175260577,
+  "outside_share": 0.035440592693230306,
+  "radius": 1.913903461879167,
+  "carry": 6.439982328414916,
+  "gap_lt1m": 0.17214718706795704
+ },
+ "learned": {
+  "A": [
+   [
+    0.9350883556795211,
+    0.049030750676303865,
+    0.01588089364417516
+   ],
+   [
+    0.0767760841990547,
+    0.9080698528149035,
+    0.015154062986041793
+   ],
+   [
+    0.013532398752159221,
+    0.011577291527121223,
+    0.9748903097207197
+   ]
+  ],
+  "sojourn_s": [
+   6.162222574814738,
+   4.351129768068587,
+   15.93010489380932
+  ],
+  "posterior_mean_by_state": {
+   "player_speed_mps(H,A,D)": [
+    2.2707826271327267,
+    2.3593440526421947,
+    0.8901255072035889
+   ],
+   "ball_speed_mps(H,A,D)": [
+    7.12219211058677,
+    7.296333876811229,
+    3.9696464222141077
+   ],
+   "signed_gap_m(H,A,D)": [
+    5.312275557745092,
+    -5.083237231998696,
+    -1.0577224780544843
+   ]
+  },
+  "state_share_posterior": [
+   0.3700887916234435,
+   0.2453568848478514,
+   0.3845543206829267
+  ],
+  "speed_cross_mps": 1.3437466666495896,
+  "p_outside": [
+   0.019888265805401695,
+   0.019888265805401695,
+   0.11819738418217506
+  ],
+  "p_setpiece": [
+   0.05222938222336127,
+   0.05222938222336127,
+   0.1523747260625077
+  ],
+  "converged": true,
+  "iters": 23,
+  "logL_per_step": -5.243613794417466,
+  "monotone": true,
+  "anchor_ok": true
+ },
+ "comparison": {
+  "baseline_raw": {
+   "possessions": 1949,
+   "possessions_per_min": 18.403343887899183,
+   "median_possession_s": 0.92,
+   "pct_possessions_lt_2s": 69.31759876859928,
+   "transitions_per_min": 19.80082715901723,
+   "reversal_rate_3s_pct": 76.94444444444444,
+   "D_share_pct": 40.6925725652631,
+   "median_D_stretch_s": 10.72,
+   "restart_D_end_within_2s_pct": 13.793103448275861,
+   "restart_any_D_within_2s_pct": 77.58620689655173,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 0.0,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 29.116117850953206,
+   "n_handovers_judged": 1731,
+   "n_direct_handovers": 1800,
+   "home_share_of_alive_pct": 56.41093680344747
+  },
+  "baseline_smooth25": {
+   "possessions": 746,
+   "possessions_per_min": 7.044071082797737,
+   "median_possession_s": 3.04,
+   "pct_possessions_lt_2s": 34.316353887399465,
+   "transitions_per_min": 8.281032626827903,
+   "reversal_rate_3s_pct": 42.74061990212072,
+   "D_share_pct": 36.49068029737437,
+   "median_D_stretch_s": 9.56,
+   "restart_D_end_within_2s_pct": 17.24137931034483,
+   "restart_any_D_within_2s_pct": 77.58620689655173,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 0.0,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 36.347517730496456,
+   "n_handovers_judged": 564,
+   "n_direct_handovers": 613,
+   "home_share_of_alive_pct": 57.35808661003677
+  },
+  "baseline_smooth50": {
+   "possessions": 594,
+   "possessions_per_min": 5.608817993541361,
+   "median_possession_s": 4.6,
+   "pct_possessions_lt_2s": 31.313131313131315,
+   "transitions_per_min": 6.845779537571527,
+   "reversal_rate_3s_pct": 29.50108459869848,
+   "D_share_pct": 32.336000302158546,
+   "median_D_stretch_s": 7.56,
+   "restart_D_end_within_2s_pct": 15.517241379310345,
+   "restart_any_D_within_2s_pct": 68.96551724137932,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 0.0,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 32.91139240506329,
+   "n_handovers_judged": 395,
+   "n_direct_handovers": 461,
+   "home_share_of_alive_pct": 57.034673315409016
+  },
+  "baseline_smooth125": {
+   "possessions": 398,
+   "possessions_per_min": 3.758096904763404,
+   "median_possession_s": 8.14,
+   "pct_possessions_lt_2s": 27.63819095477387,
+   "transitions_per_min": 4.485165903926173,
+   "reversal_rate_3s_pct": 26.10062893081761,
+   "D_share_pct": 22.333293465191964,
+   "median_D_stretch_s": 10.88,
+   "restart_D_end_within_2s_pct": 29.310344827586206,
+   "restart_any_D_within_2s_pct": 48.275862068965516,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 0.0,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 25.274725274725274,
+   "n_handovers_judged": 182,
+   "n_direct_handovers": 318,
+   "home_share_of_alive_pct": 56.65794016809992
+  },
+  "hmm_v1": {
+   "possessions": 563,
+   "possessions_per_min": 5.316101902969337,
+   "median_possession_s": 4.4,
+   "pct_possessions_lt_2s": 26.642984014209592,
+   "transitions_per_min": 6.66637290141448,
+   "reversal_rate_3s_pct": 36.754176610978526,
+   "D_share_pct": 38.6825887433352,
+   "median_D_stretch_s": 8.8,
+   "restart_D_end_within_2s_pct": 8.620689655172415,
+   "restart_any_D_within_2s_pct": 84.48275862068965,
+   "n_restarts_graded": 58,
+   "ball_outside_labelled_D_pct": 53.908355795148246,
+   "n_ball_outside_frames": 3339,
+   "handover_plausible_pct": 36.224489795918366,
+   "n_handovers_judged": 392,
+   "n_direct_handovers": 419,
+   "home_share_of_alive_pct": 65.89567484883017
+  }
+ }
+}

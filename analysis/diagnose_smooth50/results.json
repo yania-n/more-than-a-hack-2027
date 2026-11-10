@@ -1,0 +1,1143 @@
+{
+ "window": {
+  "first": 11185,
+  "last": 18684,
+  "frames": 7500
+ },
+ "scores": {
+  "macro_f1": 0.6207331924027959,
+  "spell_f1_mean": 0.3255813953488372,
+  "n_gt_spells": 17,
+  "n_pred_spells": 26,
+  "mean_spell_duration_s": 10.803076923076924,
+  "gt_mean_spell_duration_s": 14.190588235294117,
+  "alive_dead_f1": 0.8989504328506857,
+  "team_acc_both_alive": 0.8581898755752514,
+  "spell_f1_per_iou": {
+   "0.3": 0.5116,
+   "0.4": 0.4651,
+   "0.5": 0.3256,
+   "0.6": 0.2326,
+   "0.7": 0.093
+  }
+ },
+ "confusion": {
+  "rows_gt": [
+   "H",
+   "A",
+   "D"
+  ],
+  "cols_pred": [
+   "H",
+   "A",
+   "D",
+   "X"
+  ],
+  "matrix": [
+   [
+    3041,
+    413,
+    0,
+    0
+   ],
+   [
+    419,
+    1994,
+    164,
+    0
+   ],
+   [
+    902,
+    253,
+    314,
+    0
+   ]
+  ]
+ },
+ "errors": {
+  "total": 2151,
+  "pct_of_graded": 28.7,
+  "groups": {
+   "alive->dead": {
+    "frames": 164,
+    "pct_of_errors": 7.6
+   },
+   "dead->alive": {
+    "frames": 1155,
+    "pct_of_errors": 53.7
+   },
+   "wrong team": {
+    "frames": 832,
+    "pct_of_errors": 38.7
+   },
+   "abstain": {
+    "frames": 0,
+    "pct_of_errors": 0.0
+   }
+  }
+ },
+ "error_causes": {
+  "dead->alive": {
+   "ball missing; vote bleeds alive label in": 180,
+   "ball seen during stoppage": 975
+  },
+  "alive->dead": {
+   "ball missing for whole +-50 window": 164
+  },
+  "wrong team": {
+   "ball missing; vote inherits neighbour label": 93,
+   "nearest player is the other team": 588,
+   "nearest player right; vote overrides": 151
+  }
+ },
+ "raw_nearest_player": {
+  "frames_ball_visible_gt_alive": 5640,
+  "team_correct_pct": 77.8,
+  "ball_present_pct_gt_alive": 93.5,
+  "ball_present_pct_gt_dead": 66.4
+ },
+ "error_circumstances": {
+  "error_frames_ball_missing_pct": 20.3,
+  "all_frames_ball_missing_pct": 11.8,
+  "error_frames_within_2s_of_gt_transition_pct": 39.0,
+  "all_frames_within_2s_of_gt_transition_pct": 23.9,
+  "error_frames_during_gt_dead_pct": 53.7,
+  "all_frames_gt_dead_pct": 19.6
+ },
+ "gt_possessions": [
+  {
+   "gt": "G1",
+   "start": 11185,
+   "end": 11350,
+   "dur_s": 6.6,
+   "team": "A",
+   "best_pred": "P1",
+   "iou": 0.587,
+   "matched@0.5": true,
+   "thresholds_matched": 3,
+   "class": "",
+   "pred_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "gt": "G2",
+   "start": 11351,
+   "end": 11552,
+   "dur_s": 8.1,
+   "team": "H",
+   "best_pred": "P2",
+   "iou": 0.241,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "merged",
+   "pred_frames_%HAD": "H 42 / A 58 / D 0"
+  },
+  {
+   "gt": "G3",
+   "start": 11553,
+   "end": 11623,
+   "dur_s": 2.8,
+   "team": "A",
+   "best_pred": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "pred_frames_%HAD": "H 100 / A 0 / D 0"
+  },
+  {
+   "gt": "G4",
+   "start": 11624,
+   "end": 12664,
+   "dur_s": 41.6,
+   "team": "H",
+   "best_pred": "P4",
+   "iou": 0.793,
+   "matched@0.5": true,
+   "thresholds_matched": 5,
+   "class": "",
+   "pred_frames_%HAD": "H 87 / A 13 / D 0"
+  },
+  {
+   "gt": "G5",
+   "start": 12665,
+   "end": 12850,
+   "dur_s": 7.4,
+   "team": "A",
+   "best_pred": "P5",
+   "iou": 0.384,
+   "matched@0.5": false,
+   "thresholds_matched": 1,
+   "class": "boundary",
+   "pred_frames_%HAD": "H 54 / A 46 / D 0"
+  },
+  {
+   "gt": "G6",
+   "start": 12989,
+   "end": 13703,
+   "dur_s": 28.6,
+   "team": "H",
+   "best_pred": "P7",
+   "iou": 0.862,
+   "matched@0.5": true,
+   "thresholds_matched": 5,
+   "class": "",
+   "pred_frames_%HAD": "H 93 / A 7 / D 0"
+  },
+  {
+   "gt": "G7",
+   "start": 13704,
+   "end": 13784,
+   "dur_s": 3.2,
+   "team": "A",
+   "best_pred": "P8",
+   "iou": 0.604,
+   "matched@0.5": true,
+   "thresholds_matched": 4,
+   "class": "",
+   "pred_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "gt": "G8",
+   "start": 13785,
+   "end": 14845,
+   "dur_s": 42.4,
+   "team": "H",
+   "best_pred": "P11",
+   "iou": 0.558,
+   "matched@0.5": true,
+   "thresholds_matched": 3,
+   "class": "",
+   "pred_frames_%HAD": "H 95 / A 5 / D 0"
+  },
+  {
+   "gt": "G9",
+   "start": 14846,
+   "end": 15345,
+   "dur_s": 20.0,
+   "team": "A",
+   "best_pred": "P12",
+   "iou": 0.62,
+   "matched@0.5": true,
+   "thresholds_matched": 4,
+   "class": "",
+   "pred_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "gt": "G10",
+   "start": 15346,
+   "end": 15364,
+   "dur_s": 0.8,
+   "team": "H",
+   "best_pred": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "pred_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "gt": "G11",
+   "start": 15365,
+   "end": 15765,
+   "dur_s": 16.0,
+   "team": "A",
+   "best_pred": "P12",
+   "iou": 0.309,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "split",
+   "pred_frames_%HAD": "H 16 / A 84 / D 0"
+  },
+  {
+   "gt": "G12",
+   "start": 15766,
+   "end": 15798,
+   "dur_s": 1.3,
+   "team": "H",
+   "best_pred": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "pred_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "gt": "G13",
+   "start": 15799,
+   "end": 15888,
+   "dur_s": 3.6,
+   "team": "A",
+   "best_pred": "P14",
+   "iou": 0.237,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "merged",
+   "pred_frames_%HAD": "H 53 / A 47 / D 0"
+  },
+  {
+   "gt": "G14",
+   "start": 16400,
+   "end": 17292,
+   "dur_s": 35.7,
+   "team": "A",
+   "best_pred": "P19",
+   "iou": 0.413,
+   "matched@0.5": false,
+   "thresholds_matched": 2,
+   "class": "split",
+   "pred_frames_%HAD": "H 12 / A 70 / D 18"
+  },
+  {
+   "gt": "G15",
+   "start": 17293,
+   "end": 17379,
+   "dur_s": 3.5,
+   "team": "H",
+   "best_pred": "P20",
+   "iou": 0.464,
+   "matched@0.5": false,
+   "thresholds_matched": 2,
+   "class": "boundary",
+   "pred_frames_%HAD": "H 89 / A 11 / D 0"
+  },
+  {
+   "gt": "G16",
+   "start": 17838,
+   "end": 18026,
+   "dur_s": 7.6,
+   "team": "A",
+   "best_pred": "P25",
+   "iou": 0.633,
+   "matched@0.5": true,
+   "thresholds_matched": 4,
+   "class": "",
+   "pred_frames_%HAD": "H 16 / A 84 / D 0"
+  },
+  {
+   "gt": "G17",
+   "start": 18389,
+   "end": 18684,
+   "dur_s": 11.8,
+   "team": "H",
+   "best_pred": "P26",
+   "iou": 0.43,
+   "matched@0.5": false,
+   "thresholds_matched": 2,
+   "class": "boundary",
+   "pred_frames_%HAD": "H 100 / A 0 / D 0"
+  }
+ ],
+ "pred_possessions": [
+  {
+   "pred": "P1",
+   "start": 11185,
+   "end": 11467,
+   "dur_s": 11.3,
+   "team": "A",
+   "best_gt": "G1",
+   "iou": 0.587,
+   "matched@0.5": true,
+   "thresholds_matched": 3,
+   "class": "",
+   "gt_frames_%HAD": "H 41 / A 59 / D 0"
+  },
+  {
+   "pred": "P2",
+   "start": 11468,
+   "end": 11703,
+   "dur_s": 9.4,
+   "team": "H",
+   "best_gt": "G2",
+   "iou": 0.241,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "merged",
+   "gt_frames_%HAD": "H 70 / A 30 / D 0"
+  },
+  {
+   "pred": "P3",
+   "start": 11704,
+   "end": 11800,
+   "dur_s": 3.9,
+   "team": "A",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "gt_frames_%HAD": "H 100 / A 0 / D 0"
+  },
+  {
+   "pred": "P4",
+   "start": 11801,
+   "end": 12626,
+   "dur_s": 33.0,
+   "team": "H",
+   "best_gt": "G4",
+   "iou": 0.793,
+   "matched@0.5": true,
+   "thresholds_matched": 5,
+   "class": "",
+   "gt_frames_%HAD": "H 100 / A 0 / D 0"
+  },
+  {
+   "pred": "P5",
+   "start": 12627,
+   "end": 12750,
+   "dur_s": 5.0,
+   "team": "A",
+   "best_gt": "G5",
+   "iou": 0.384,
+   "matched@0.5": false,
+   "thresholds_matched": 1,
+   "class": "boundary",
+   "gt_frames_%HAD": "H 31 / A 69 / D 0"
+  },
+  {
+   "pred": "P6",
+   "start": 12751,
+   "end": 12880,
+   "dur_s": 5.2,
+   "team": "H",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "gt_frames_%HAD": "H 0 / A 77 / D 23"
+  },
+  {
+   "pred": "P7",
+   "start": 12929,
+   "end": 13656,
+   "dur_s": 29.1,
+   "team": "H",
+   "best_gt": "G6",
+   "iou": 0.862,
+   "matched@0.5": true,
+   "thresholds_matched": 5,
+   "class": "",
+   "gt_frames_%HAD": "H 92 / A 0 / D 8"
+  },
+  {
+   "pred": "P8",
+   "start": 13657,
+   "end": 13790,
+   "dur_s": 5.4,
+   "team": "A",
+   "best_gt": "G7",
+   "iou": 0.604,
+   "matched@0.5": true,
+   "thresholds_matched": 4,
+   "class": "",
+   "gt_frames_%HAD": "H 40 / A 60 / D 0"
+  },
+  {
+   "pred": "P9",
+   "start": 13791,
+   "end": 14206,
+   "dur_s": 16.6,
+   "team": "H",
+   "best_gt": "G8",
+   "iou": 0.392,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "split",
+   "gt_frames_%HAD": "H 100 / A 0 / D 0"
+  },
+  {
+   "pred": "P10",
+   "start": 14207,
+   "end": 14252,
+   "dur_s": 1.8,
+   "team": "A",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "gt_frames_%HAD": "H 100 / A 0 / D 0"
+  },
+  {
+   "pred": "P11",
+   "start": 14253,
+   "end": 14847,
+   "dur_s": 23.8,
+   "team": "H",
+   "best_gt": "G8",
+   "iou": 0.558,
+   "matched@0.5": true,
+   "thresholds_matched": 3,
+   "class": "",
+   "gt_frames_%HAD": "H 100 / A 0 / D 0"
+  },
+  {
+   "pred": "P12",
+   "start": 14848,
+   "end": 15648,
+   "dur_s": 32.0,
+   "team": "A",
+   "best_gt": "G9",
+   "iou": 0.62,
+   "matched@0.5": true,
+   "thresholds_matched": 4,
+   "class": "",
+   "gt_frames_%HAD": "H 2 / A 98 / D 0"
+  },
+  {
+   "pred": "P13",
+   "start": 15649,
+   "end": 15711,
+   "dur_s": 2.5,
+   "team": "H",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "gt_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "pred": "P14",
+   "start": 15712,
+   "end": 15840,
+   "dur_s": 5.2,
+   "team": "A",
+   "best_gt": "G13",
+   "iou": 0.237,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "merged",
+   "gt_frames_%HAD": "H 26 / A 74 / D 0"
+  },
+  {
+   "pred": "P15",
+   "start": 15841,
+   "end": 16276,
+   "dur_s": 17.4,
+   "team": "H",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "spurious",
+   "gt_frames_%HAD": "H 0 / A 11 / D 89"
+  },
+  {
+   "pred": "P16",
+   "start": 16277,
+   "end": 16627,
+   "dur_s": 14.0,
+   "team": "A",
+   "best_gt": "G14",
+   "iou": 0.224,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "split",
+   "gt_frames_%HAD": "H 0 / A 65 / D 35"
+  },
+  {
+   "pred": "P17",
+   "start": 16628,
+   "end": 16668,
+   "dur_s": 1.6,
+   "team": "H",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "gt_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "pred": "P18",
+   "start": 16669,
+   "end": 16695,
+   "dur_s": 1.1,
+   "team": "A",
+   "best_gt": "G14",
+   "iou": 0.03,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "split",
+   "gt_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "pred": "P19",
+   "start": 16728,
+   "end": 17096,
+   "dur_s": 14.8,
+   "team": "A",
+   "best_gt": "G14",
+   "iou": 0.413,
+   "matched@0.5": false,
+   "thresholds_matched": 2,
+   "class": "split",
+   "gt_frames_%HAD": "H 0 / A 100 / D 0"
+  },
+  {
+   "pred": "P20",
+   "start": 17229,
+   "end": 17362,
+   "dur_s": 5.4,
+   "team": "H",
+   "best_gt": "G15",
+   "iou": 0.464,
+   "matched@0.5": false,
+   "thresholds_matched": 2,
+   "class": "boundary",
+   "gt_frames_%HAD": "H 52 / A 48 / D 0"
+  },
+  {
+   "pred": "P21",
+   "start": 17363,
+   "end": 17372,
+   "dur_s": 0.4,
+   "team": "A",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "wrong team",
+   "gt_frames_%HAD": "H 100 / A 0 / D 0"
+  },
+  {
+   "pred": "P22",
+   "start": 17373,
+   "end": 17381,
+   "dur_s": 0.4,
+   "team": "H",
+   "best_gt": "G15",
+   "iou": 0.079,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "boundary",
+   "gt_frames_%HAD": "H 78 / A 0 / D 22"
+  },
+  {
+   "pred": "P23",
+   "start": 17382,
+   "end": 17449,
+   "dur_s": 2.7,
+   "team": "A",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "spurious",
+   "gt_frames_%HAD": "H 0 / A 0 / D 100"
+  },
+  {
+   "pred": "P24",
+   "start": 17450,
+   "end": 17509,
+   "dur_s": 2.4,
+   "team": "H",
+   "best_gt": "-",
+   "iou": 0.0,
+   "matched@0.5": false,
+   "thresholds_matched": 0,
+   "class": "spurious",
+   "gt_frames_%HAD": "H 0 / A 0 / D 100"
+  },
+  {
+   "pred": "P25",
+   "start": 17776,
+   "end": 17996,
+   "dur_s": 8.8,
+   "team": "A",
+   "best_gt": "G16",
+   "iou": 0.633,
+   "matched@0.5": true,
+   "thresholds_matched": 4,
+   "class": "",
+   "gt_frames_%HAD": "H 0 / A 72 / D 28"
+  },
+  {
+   "pred": "P26",
+   "start": 17997,
+   "end": 18684,
+   "dur_s": 27.5,
+   "team": "H",
+   "best_gt": "G17",
+   "iou": 0.43,
+   "matched@0.5": false,
+   "thresholds_matched": 2,
+   "class": "boundary",
+   "gt_frames_%HAD": "H 43 / A 4 / D 53"
+  }
+ ],
+ "class_counts": {
+  "gt_unmatched": {
+   "wrong team": 3,
+   "boundary": 3,
+   "merged": 2,
+   "split": 2
+  },
+  "pred_unmatched": {
+   "wrong team": 6,
+   "boundary": 4,
+   "split": 4,
+   "spurious": 3,
+   "merged": 2
+  }
+ },
+ "long_stretches": [
+  {
+   "start": 11351,
+   "end": 11467,
+   "dur_s": 4.7,
+   "type": "H->A (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 5.5,
+   "ball_to_away_m": 2.6,
+   "mean_speed_mps": 2.84,
+   "frames_to_gt_transition": 0,
+   "main_cause": "nearest player is the other team (98%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]; LONG BALL [A]"
+  },
+  {
+   "start": 11553,
+   "end": 11623,
+   "dur_s": 2.8,
+   "type": "A->H (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 2.2,
+   "ball_to_away_m": 2.9,
+   "mean_speed_mps": 3.31,
+   "frames_to_gt_transition": 0,
+   "main_cause": "nearest player is the other team (76%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]"
+  },
+  {
+   "start": 11704,
+   "end": 11800,
+   "dur_s": 3.9,
+   "type": "H->A (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 5.5,
+   "ball_to_away_m": 3.2,
+   "mean_speed_mps": 3.41,
+   "frames_to_gt_transition": 80,
+   "main_cause": "nearest player is the other team (90%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]"
+  },
+  {
+   "start": 12627,
+   "end": 12664,
+   "dur_s": 1.5,
+   "type": "H->A (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 4.3,
+   "ball_to_away_m": 3.3,
+   "mean_speed_mps": 3.37,
+   "frames_to_gt_transition": 1,
+   "main_cause": "nearest player is the other team (63%)",
+   "smart_tagging": "BALL IN FINAL THIRD [A]; PROGRESSION [H]; ATTACKING TRANSITION [A]"
+  },
+  {
+   "start": 12751,
+   "end": 12850,
+   "dur_s": 4.0,
+   "type": "A->H (wrong team)",
+   "ball_present_%": 80.0,
+   "ball_to_home_m": 2.8,
+   "ball_to_away_m": 4.0,
+   "mean_speed_mps": 3.89,
+   "frames_to_gt_transition": 1,
+   "main_cause": "nearest player is the other team (59%)",
+   "smart_tagging": "BALL IN FINAL THIRD [A]; ATTACKING TRANSITION [A]"
+  },
+  {
+   "start": 12851,
+   "end": 12880,
+   "dur_s": 1.2,
+   "type": "D->H (dead->alive)",
+   "ball_present_%": 0.0,
+   "ball_to_home_m": null,
+   "ball_to_away_m": null,
+   "mean_speed_mps": 2.66,
+   "frames_to_gt_transition": 0,
+   "main_cause": "ball missing; vote bleeds alive label in (100%)",
+   "smart_tagging": "-"
+  },
+  {
+   "start": 12929,
+   "end": 12988,
+   "dur_s": 2.4,
+   "type": "D->H (dead->alive)",
+   "ball_present_%": 17.0,
+   "ball_to_home_m": 1.8,
+   "ball_to_away_m": 6.6,
+   "mean_speed_mps": 1.22,
+   "frames_to_gt_transition": 1,
+   "main_cause": "ball missing; vote bleeds alive label in (83%)",
+   "smart_tagging": "-"
+  },
+  {
+   "start": 13657,
+   "end": 13703,
+   "dur_s": 1.9,
+   "type": "H->A (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 4.0,
+   "ball_to_away_m": 1.6,
+   "mean_speed_mps": 2.68,
+   "frames_to_gt_transition": 1,
+   "main_cause": "nearest player is the other team (81%)",
+   "smart_tagging": "PROGRESSION [H]"
+  },
+  {
+   "start": 14207,
+   "end": 14252,
+   "dur_s": 1.8,
+   "type": "H->A (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 6.8,
+   "ball_to_away_m": 5.3,
+   "mean_speed_mps": 2.79,
+   "frames_to_gt_transition": 422,
+   "main_cause": "nearest player is the other team (63%)",
+   "smart_tagging": "BALL IN FINAL THIRD [H]"
+  },
+  {
+   "start": 15649,
+   "end": 15711,
+   "dur_s": 2.5,
+   "type": "A->H (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 2.1,
+   "ball_to_away_m": 4.9,
+   "mean_speed_mps": 2.27,
+   "frames_to_gt_transition": 55,
+   "main_cause": "nearest player is the other team (87%)",
+   "smart_tagging": "PLAYERS IN THE BOX [H]"
+  },
+  {
+   "start": 15766,
+   "end": 15798,
+   "dur_s": 1.3,
+   "type": "H->A (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 2.8,
+   "ball_to_away_m": 1.3,
+   "mean_speed_mps": 3.13,
+   "frames_to_gt_transition": 0,
+   "main_cause": "nearest player is the other team (100%)",
+   "smart_tagging": "PLAYERS IN THE BOX [H]"
+  },
+  {
+   "start": 15841,
+   "end": 15888,
+   "dur_s": 1.9,
+   "type": "A->H (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 4.2,
+   "ball_to_away_m": 8.9,
+   "mean_speed_mps": 2.72,
+   "frames_to_gt_transition": 1,
+   "main_cause": "nearest player is the other team (75%)",
+   "smart_tagging": "PLAYERS IN THE BOX [H]"
+  },
+  {
+   "start": 15889,
+   "end": 16276,
+   "dur_s": 15.5,
+   "type": "D->H (dead->alive)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 6.0,
+   "ball_to_away_m": 23.0,
+   "mean_speed_mps": 1.22,
+   "frames_to_gt_transition": 0,
+   "main_cause": "ball seen during stoppage (100%)",
+   "smart_tagging": "PLAYERS IN THE BOX [H]"
+  },
+  {
+   "start": 16277,
+   "end": 16399,
+   "dur_s": 4.9,
+   "type": "D->A (dead->alive)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 6.4,
+   "ball_to_away_m": 1.1,
+   "mean_speed_mps": 0.83,
+   "frames_to_gt_transition": 1,
+   "main_cause": "ball seen during stoppage (100%)",
+   "smart_tagging": "-"
+  },
+  {
+   "start": 16628,
+   "end": 16668,
+   "dur_s": 1.6,
+   "type": "A->H (wrong team)",
+   "ball_present_%": 44.0,
+   "ball_to_home_m": 12.8,
+   "ball_to_away_m": 8.6,
+   "mean_speed_mps": 3.5,
+   "frames_to_gt_transition": 228,
+   "main_cause": "ball missing; vote inherits neighbour label (56%)",
+   "smart_tagging": "-"
+  },
+  {
+   "start": 16696,
+   "end": 16727,
+   "dur_s": 1.3,
+   "type": "A->D (alive->dead)",
+   "ball_present_%": 0.0,
+   "ball_to_home_m": null,
+   "ball_to_away_m": null,
+   "mean_speed_mps": 3.56,
+   "frames_to_gt_transition": 296,
+   "main_cause": "ball missing for whole +-50 window (100%)",
+   "smart_tagging": "-"
+  },
+  {
+   "start": 17097,
+   "end": 17228,
+   "dur_s": 5.3,
+   "type": "A->D (alive->dead)",
+   "ball_present_%": 0.0,
+   "ball_to_home_m": null,
+   "ball_to_away_m": null,
+   "mean_speed_mps": 2.31,
+   "frames_to_gt_transition": 65,
+   "main_cause": "ball missing for whole +-50 window (100%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]"
+  },
+  {
+   "start": 17229,
+   "end": 17292,
+   "dur_s": 2.6,
+   "type": "A->H (wrong team)",
+   "ball_present_%": 22.0,
+   "ball_to_home_m": 2.4,
+   "ball_to_away_m": 4.5,
+   "mean_speed_mps": 1.96,
+   "frames_to_gt_transition": 1,
+   "main_cause": "ball missing; vote inherits neighbour label (78%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; PROGRESSION [A]"
+  },
+  {
+   "start": 17382,
+   "end": 17449,
+   "dur_s": 2.7,
+   "type": "D->A (dead->alive)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 7.0,
+   "ball_to_away_m": 3.8,
+   "mean_speed_mps": 1.2,
+   "frames_to_gt_transition": 2,
+   "main_cause": "ball seen during stoppage (100%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]"
+  },
+  {
+   "start": 17450,
+   "end": 17509,
+   "dur_s": 2.4,
+   "type": "D->H (dead->alive)",
+   "ball_present_%": 17.0,
+   "ball_to_home_m": 7.7,
+   "ball_to_away_m": 11.5,
+   "mean_speed_mps": 1.33,
+   "frames_to_gt_transition": 70,
+   "main_cause": "ball missing; vote bleeds alive label in (83%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]"
+  },
+  {
+   "start": 17776,
+   "end": 17837,
+   "dur_s": 2.5,
+   "type": "D->A (dead->alive)",
+   "ball_present_%": 19.0,
+   "ball_to_home_m": 8.8,
+   "ball_to_away_m": 2.7,
+   "mean_speed_mps": 0.93,
+   "frames_to_gt_transition": 1,
+   "main_cause": "ball missing; vote bleeds alive label in (81%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; SET PIECES / Free Kick [A]; CREATING CHANCES [A]"
+  },
+  {
+   "start": 17997,
+   "end": 18026,
+   "dur_s": 1.2,
+   "type": "A->H (wrong team)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 2.8,
+   "ball_to_away_m": 4.6,
+   "mean_speed_mps": 2.32,
+   "frames_to_gt_transition": 1,
+   "main_cause": "nearest player is the other team (63%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; SET PIECES / Free Kick [A]; CREATING CHANCES [A]"
+  },
+  {
+   "start": 18027,
+   "end": 18388,
+   "dur_s": 14.5,
+   "type": "D->H (dead->alive)",
+   "ball_present_%": 100.0,
+   "ball_to_home_m": 3.0,
+   "ball_to_away_m": 17.8,
+   "mean_speed_mps": 2.13,
+   "frames_to_gt_transition": 0,
+   "main_cause": "ball seen during stoppage (100%)",
+   "smart_tagging": "PLAYERS IN THE BOX [A]; BALL IN FINAL THIRD [A]; BALL IN THE BOX [A]; BUILD UP [H]; SET PIECES / Goal Kick [H]; SET PIECES / Free Kick [A]; CREATING CHANCES [A]"
+  }
+ ],
+ "long_stretch_share_of_error_frames_pct": 98.2,
+ "speed_context": {
+  "mean_speed_gt_alive": 2.38,
+  "mean_speed_gt_dead": 1.42
+ },
+ "wrong_team_frames_by_position": {
+  "at_handover": 575,
+  "inside_possession": 257
+ },
+ "gt_spells_shorter_than_vote_window": {
+  "vote_width_frames": 101,
+  "n": 6,
+  "of": 17,
+  "matched_at_0.5": 1
+ },
+ "oracle": {
+  "none": {
+   "spell_f1_mean": 0.3256,
+   "macro_f1": 0.6207,
+   "n_pred_spells": 26,
+   "frames_fixed": 0
+  },
+  "dead->alive": {
+   "spell_f1_mean": 0.3714,
+   "macro_f1": 0.8757,
+   "n_pred_spells": 25,
+   "frames_fixed": 1155
+  },
+  "alive->dead": {
+   "spell_f1_mean": 0.3524,
+   "macro_f1": 0.6432,
+   "n_pred_spells": 25,
+   "frames_fixed": 164
+  },
+  "all dead-ball errors": {
+   "spell_f1_mean": 0.4,
+   "macro_f1": 0.906,
+   "n_pred_spells": 24,
+   "frames_fixed": 1319
+  },
+  "wrong team: nearest player is the other team": {
+   "spell_f1_mean": 0.3718,
+   "macro_f1": 0.683,
+   "n_pred_spells": 54,
+   "frames_fixed": 588
+  },
+  "wrong team: nearest player right, vote overrides": {
+   "spell_f1_mean": 0.2984,
+   "macro_f1": 0.6369,
+   "n_pred_spells": 46,
+   "frames_fixed": 151
+  },
+  "wrong team: ball missing": {
+   "spell_f1_mean": 0.3217,
+   "macro_f1": 0.6311,
+   "n_pred_spells": 29,
+   "frames_fixed": 93
+  },
+  "all wrong team": {
+   "spell_f1_mean": 0.79,
+   "macro_f1": 0.7092,
+   "n_pred_spells": 23,
+   "frames_fixed": 832
+  },
+  "wrong team stretches touching a GT transition (hand-over timing)": {
+   "spell_f1_mean": 0.616,
+   "macro_f1": 0.6819,
+   "n_pred_spells": 33,
+   "frames_fixed": 575
+  },
+  "wrong team stretches inside a GT possession (mid-spell flips)": {
+   "spell_f1_mean": 0.4485,
+   "macro_f1": 0.6478,
+   "n_pred_spells": 16,
+   "frames_fixed": 257
+  },
+  "everything except dead->alive": {
+   "spell_f1_mean": 0.8632,
+   "macro_f1": 0.73,
+   "n_pred_spells": 21,
+   "frames_fixed": 996
+  },
+  "everything except alive->dead": {
+   "spell_f1_mean": 0.9111,
+   "macro_f1": 0.9714,
+   "n_pred_spells": 19,
+   "frames_fixed": 1987
+  },
+  "everything except wrong team": {
+   "spell_f1_mean": 0.4,
+   "macro_f1": 0.906,
+   "n_pred_spells": 24,
+   "frames_fixed": 1319
+  },
+  "everything except all dead-ball errors": {
+   "spell_f1_mean": 0.79,
+   "macro_f1": 0.7092,
+   "n_pred_spells": 23,
+   "frames_fixed": 832
+  },
+  "everything except wrong-team hand-over stretches": {
+   "spell_f1_mean": 0.5677,
+   "macro_f1": 0.9349,
+   "n_pred_spells": 14,
+   "frames_fixed": 1576
+  },
+  "everything except wrong-team mid-spell flips": {
+   "spell_f1_mean": 0.7455,
+   "macro_f1": 0.971,
+   "n_pred_spells": 27,
+   "frames_fixed": 1894
+  },
+  "all errors within 2 s of a GT transition": {
+   "spell_f1_mean": 0.5286,
+   "macro_f1": 0.778,
+   "n_pred_spells": 39,
+   "frames_fixed": 838
+  },
+  "all errors further than 2 s from a GT transition": {
+   "spell_f1_mean": 0.5647,
+   "macro_f1": 0.8798,
+   "n_pred_spells": 17,
+   "frames_fixed": 1313
+  }
+ },
+ "transition_timing_5s": {
+  "gt_transitions": 20,
+  "matched": 12,
+  "missed": 8,
+  "spurious": 17,
+  "latency_frames": [
+   117,
+   -60,
+   6,
+   -117,
+   -64,
+   -38,
+   -47,
+   2,
+   -87,
+   -123,
+   -62,
+   30
+  ],
+  "median_latency_s": -2.14,
+  "late_by_over_1s": 2,
+  "early_by_over_1s": 8
+ },
+ "unlabeled_full_match": {
+  "n_spells": 594,
+  "spells_per_min": 5.61,
+  "mean_spell_s": 7.2,
+  "median_spell_s": 4.6,
+  "spells_under_2s_pct": 31.3,
+  "transitions_per_min": 6.85,
+  "pred_D_pct": 32.3
+ }
+}

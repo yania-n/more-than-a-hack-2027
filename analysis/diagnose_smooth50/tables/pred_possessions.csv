@@ -1,0 +1,27 @@
+pred,start,end,dur_s,team,best_gt,iou,matched@0.5,thresholds_matched,class,gt_frames_%HAD
+P1,11185,11467,11.3,A,G1,0.587,True,3,,H 41 / A 59 / D 0
+P2,11468,11703,9.4,H,G2,0.241,False,0,merged,H 70 / A 30 / D 0
+P3,11704,11800,3.9,A,-,0.0,False,0,wrong team,H 100 / A 0 / D 0
+P4,11801,12626,33.0,H,G4,0.793,True,5,,H 100 / A 0 / D 0
+P5,12627,12750,5.0,A,G5,0.384,False,1,boundary,H 31 / A 69 / D 0
+P6,12751,12880,5.2,H,-,0.0,False,0,wrong team,H 0 / A 77 / D 23
+P7,12929,13656,29.1,H,G6,0.862,True,5,,H 92 / A 0 / D 8
+P8,13657,13790,5.4,A,G7,0.604,True,4,,H 40 / A 60 / D 0
+P9,13791,14206,16.6,H,G8,0.392,False,0,split,H 100 / A 0 / D 0
+P10,14207,14252,1.8,A,-,0.0,False,0,wrong team,H 100 / A 0 / D 0
+P11,14253,14847,23.8,H,G8,0.558,True,3,,H 100 / A 0 / D 0
+P12,14848,15648,32.0,A,G9,0.62,True,4,,H 2 / A 98 / D 0
+P13,15649,15711,2.5,H,-,0.0,False,0,wrong team,H 0 / A 100 / D 0
+P14,15712,15840,5.2,A,G13,0.237,False,0,merged,H 26 / A 74 / D 0
+P15,15841,16276,17.4,H,-,0.0,False,0,spurious,H 0 / A 11 / D 89
+P16,16277,16627,14.0,A,G14,0.224,False,0,split,H 0 / A 65 / D 35
+P17,16628,16668,1.6,H,-,0.0,False,0,wrong team,H 0 / A 100 / D 0
+P18,16669,16695,1.1,A,G14,0.03,False,0,split,H 0 / A 100 / D 0
+P19,16728,17096,14.8,A,G14,0.413,False,2,split,H 0 / A 100 / D 0
+P20,17229,17362,5.4,H,G15,0.464,False,2,boundary,H 52 / A 48 / D 0
+P21,17363,17372,0.4,A,-,0.0,False,0,wrong team,H 100 / A 0 / D 0
+P22,17373,17381,0.4,H,G15,0.079,False,0,boundary,H 78 / A 0 / D 22
+P23,17382,17449,2.7,A,-,0.0,False,0,spurious,H 0 / A 0 / D 100
+P24,17450,17509,2.4,H,-,0.0,False,0,spurious,H 0 / A 0 / D 100
+P25,17776,17996,8.8,A,G16,0.633,True,4,,H 0 / A 72 / D 28
+P26,17997,18684,27.5,H,G17,0.43,False,2,boundary,H 43 / A 4 / D 53
