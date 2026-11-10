@@ -21,6 +21,14 @@ Read the caveats in each report before relying on a number. The public ground tr
 competition's ground truth. In all three sample games the ball track is blank during stoppages, which
 flatters rules that treat a missing ball as dead ball.
 
+## Why some tables repeat
+`harness_baselines/`, `logo_v1/` and `logo_v1_followup/rerun/` each have their own `summary.md` and `all_metrics.md`, and the
+four organizer baselines appear in all three. This is deliberate: each folder is one self-contained run with its own label
+files, predictions and decision rule, and each run compares a different set of methods (v1, then `v1_logo`, then `v1_logo_p24`).
+The baseline numbers are identical across them, which doubles as a check that the runs are comparable.
+
+Prediction files for the full match are in `../submissions/` (see its README for which are duplicates and why they stay).
+
 ## What is not in this folder, and why
 Kept out of git by `analysis/.gitignore`:
 - **Parsed tracking caches** (`*/cache/`, `*.npz`). `RULES.md` forbids publishing tracking exports.
