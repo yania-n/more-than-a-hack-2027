@@ -19,7 +19,8 @@ matchday 2) and decides, moment by moment, whether **home has the ball, away has
   EPTS tracking plus JSON events. They were used as a test bench where the correct answers can be worked
   out. No submission file was trained on them.
   * The rules allow data from other games. Metrica's README asks for responsible use and credit to the
-    source. No formal licence file was found, so check this before relying on it for the competition.
+    source; the data is free to use with that attribution, and we credit Metrica Sports (sample-data
+    repository) here and in the technical document.
 
 ---
 
@@ -221,3 +222,23 @@ gets those moments right for free and looks better at dead ball there. The provi
   2. Tackle the **41% of frames where the ball is missing**, which is where most hand-overs get lost.
   3. Consider **supervised training on other games** (Metrica, PFF, SkillCorner, DFL) after checking
      licences and planning for the differences between their data and this match.
+
+---
+
+## Update: baselines, and a rule-compliant v1
+
+The organizers' latest rules say anything fitted or tuned must use external data only. The shipped v1
+was fitted on the provided match, so it cannot be the final model. The later folders address this.
+
+* **`harness_baselines/`** runs all four organizer baselines against v1 on the three sample games. The
+  best baseline window is smooth50 everywhere. v1 has the highest spellF1; the baselines keep an edge on
+  macroF1 and dead-ball F1, helped by the blank ball in stoppages.
+* **`logo_v1/`** refits every v1 parameter on two sample games and applies it, frozen, to the third
+  (leave-one-game-out). spellF1 is 0.474 against 0.430 for smooth50. It matches the non-compliant fits, so
+  compliance costs nothing measurable. `PROVENANCE.md` records the source of every constant.
+* **`logo_v1_followup/`** picks the number of player-speed bins (24) on external data using a label-free
+  criterion, and runs the frozen model on the provided match as input only. No output proxy looks wrong;
+  the dwell and heading features are the most provider-dependent.
+
+Caveats that still apply: the labels are proxies, the sample games have a blank ball in stoppages, and
+there are only three games. The registered verdict against smooth50 is "no clear winner, leaning v1".
