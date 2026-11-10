@@ -16,7 +16,8 @@ import numpy as np
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "evaluation"))
 import possession_metrics as pm  # noqa: E402
 
-METHODS = ["raw", "smooth25", "smooth50", "smooth125", "v1_refit", "v1_transfer"]
+ORDER = ["raw", "smooth25", "smooth50", "smooth125", "v1_refit", "v1_transfer", "v1_logo"]
+METHODS = list(ORDER[:6])   # replaced by the methods present in <dir>/results.json when main() runs
 GAMES = ["game1", "game2", "game3"]
 RULES = ["primary", "S1", "S2"]
 CONDS = ["asis", "degraded_seed0", "degraded_seed1"]
@@ -50,6 +51,9 @@ def mean(vals):
 
 
 def main(out):
+    global METHODS
+    present = json.load(open(os.path.join(out, "results.json")))["methods"]
+    METHODS = [m for m in ORDER if m in present] + [m for m in present if m not in ORDER]
     cells = {}
     for g in GAMES:
         for r in RULES:

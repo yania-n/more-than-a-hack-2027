@@ -14,7 +14,7 @@ from collections import Counter
 
 import numpy as np
 
-ORDER = ["raw", "smooth25", "smooth50", "smooth125", "v1_refit", "v1_transfer"]
+ORDER = ["raw", "smooth25", "smooth50", "smooth125", "v1_refit", "v1_transfer", "v1_logo"]
 RULES = ["primary", "S1", "S2"]
 COND_ORDER = ["asis", "degraded_seed0", "degraded_seed1", "leakfree_seed0", "leakfree_seed1"]
 
