@@ -122,8 +122,8 @@ what the model outputs. I did not probe them on the provided match.
 2. Dwell and heading are the provider-dependent features (radius 0.28-1.91 m across games; ball-track smoothness). A scale-free
    construction, or a leave-one-game-out comparison of v1 without these two features, would test whether the model needs them. Use
    external data only; do not tune on the provided match.
-3. Ask the organisers whether parameters fitted on the Metrica sample data count as external data for this competition (the repository has
-   no LICENSE file, only "be responsible" and "acknowledge the source").
+3. Licence: resolved. The repository has no LICENSE file, only "be responsible" and "acknowledge the source"; the team uses the data as
+   free to use with attribution, so no question to the organisers is needed. Metrica Sports is acknowledged in every report.
 
 ## Compliance statement
 
@@ -156,3 +156,20 @@ was produced; nothing was uploaded; the derived output is in a gitignored folder
 `rerun/` (harness output, `decisions_v1_logo_p24.md`, `all_metrics.md`, `summary.md`), `partB_features.md/json`, `partB_proxies.md/json`,
 `private/` (gitignored output), logs. Code: `possession/harness/{npspeed,domain_shift}.py`, `logo_v1.py` (bin-count support, methods
 `v1_logo_p6/8/16/24`), `logo_decisions.py` (method argument), `test_logo_v1.py` (new test).
+
+## Reproduce
+
+Same data requirements as `analysis/logo_v1/REPORT.md`.
+```
+# Part A: choose N_PSPEED on external data, then re-run with it
+python -m possession.harness.npspeed run
+python -m possession.harness.npspeed select
+python -m possession.harness.npspeed fit-followup 24
+python -m possession.harness.run --plugin possession.harness.baseline_windows --plugin possession.harness.logo_v1 --methods raw,smooth25,smooth50,smooth125,v1_refit,v1_logo_p24 --out analysis/logo_v1_followup/rerun
+python -m possession.harness.logo_decisions analysis/logo_v1_followup/rerun v1_logo_p24
+
+# Part B: domain-shift check on the provided match (input to a frozen model only)
+python -m possession.harness.domain_shift b1  --frozen analysis/logo_v1_followup/frozen_params_np24.json
+python -m possession.harness.domain_shift b23 --frozen analysis/logo_v1_followup/frozen_params_np24.json
+```
+The `rerun` command follows the pre-registered procedure (`PREREGISTRATION_A.md`). Part B writes the per-frame output to `analysis/logo_v1_followup/private/`, which stays out of git.

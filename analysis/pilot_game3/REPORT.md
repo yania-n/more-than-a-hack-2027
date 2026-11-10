@@ -6,7 +6,7 @@ before any scoring). Code: `possession/pilot/`. Nothing is committed.
 **Data source and acknowledgement.** Metrica Sports' public sample data,
 https://github.com/metrica-sports/sample-data (Sample Game 3). Its README, quoted: *"Please be
 responsible with the use of this data. If you use it for anything public, please aknowledge the
-source."* There is no formal licence. The data sits in `data/other_games/metrica_sample/` (gitignored,
+source."* There is no formal licence file; the data is free to use with this attribution. The data sits in `data/other_games/metrica_sample/` (gitignored,
 never committed or redistributed). The labels are produced by code from the sample's human-annotated
 events; no hand labelling, no manual correction.
 

@@ -101,7 +101,7 @@ Three LOGO folds (as-is), three single-game fits, the all-games fit, and the shi
   may differ on the real match.
 * **Blank ball in stoppages in all three sample games** (ball visible on 8% / 0.2% / 0.2% of dead frames). It makes "missing ball = dead"
   (the baselines) look better than on the provided match, and means v1 is trained on dead-ball data that carries an unrealistic cue.
-  The provided match is described as having the ball visible about 66% of the time, so `v1_external_all` may meet a different
+  The provided match has the ball visible on about 59% of its graded frames (`DATA.md`), so `v1_external_all` may meet a different
   dead-ball signature than it was fitted on. The degraded condition only adds gaps; it does not remove this artefact.
 * **Three games, three tracking providers' conventions, one tracking-derived speed.** The radius and heading evidence in section 4 shows
   the games differ in tracking post-processing. 3 games is too few for the registered pass/fail rule to be sharp (clause e fails
@@ -109,7 +109,8 @@ Three LOGO folds (as-is), three single-game fits, the all-games fit, and the shi
 * **Frozen parameters are not validated on the provided match** (by design: not run here, no submission produced). The parameters
   for it come from three other matches whose radius is 0.28-1.27 m against 1.91 m measured on it.
 * **Inherited hand choices.** `N_PSPEED = 12` was chosen by looking at the provided match's learned emission (PROVENANCE B9); it is
-  kept as is, not re-derivable without a human decision. `SETPIECE_LEAD` (10 s) is also provided-match-informed but inert: the sample
+  kept as is in this run. **Superseded:** `analysis/logo_v1_followup/` re-derives it on external data (24 bins, held-out
+  likelihood); the claim here that it cannot be re-derived was too strong. `SETPIECE_LEAD` (10 s) is also provided-match-informed but inert: the sample
   games have no Smart Tagging, so the set-piece feature is missing. **If the provided match's Smart Tagging were used at submission time,
   `v1_external_all` has no fitted set-piece emission** (uninformative prior): that feature would add nothing, or the model would need
   external data with set-piece tags.
@@ -119,9 +120,8 @@ Three LOGO folds (as-is), three single-game fits, the all-games fit, and the shi
 * **Degraded-ball condition** uses the provided match's ball-gap statistics (an unlabelled aggregate, shared by all methods and by the
   training games). It tunes nothing in v1, but it is a read of the provided tracking, flagged in PROVENANCE C3.
 * **Licence.** The Metrica repository has no LICENSE file; the only terms are the README's "be responsible" and "acknowledge the source".
-  The data stays gitignored; this folder holds fitted numbers and aggregate scores, not tracking or event rows. Whether fitted
-  parameters derived from it count as "external data" for the competition, and whether using them is "public use", is a question
-  for the organisers; I did not assume.
+  The data stays gitignored; this folder holds fitted numbers and aggregate scores, not tracking or event rows. The team has since taken
+  the data as free to use with attribution, so no question to the organisers is needed; the source is acknowledged here.
 * **Selection.** Picking `smooth50` as the reference was registered before this run, but "best baseline window" is itself a choice made
   on these same three games.
 
@@ -154,3 +154,17 @@ Judgment calls (most conservative option each time): training intervals = tracki
 `all_metrics.md/json`, `summary.md`, `stability.md/json`, `frozen_params.json`, `fits/` (cached fitted numbers), `labels/`, `predictions/`,
 `run.log`, `fit.log`. Code: `possession/harness/{logo_v1,logo_decisions,logo_stability,test_logo_v1}.py`; `all_metrics.py` and
 `summarize_baselines.py` now accept `v1_logo`.
+
+## Reproduce
+
+Needs the competition data in `data/` and Metrica's sample data in `data/other_games/metrica_sample/` (see `analysis/README.md`).
+```
+python -m possession.harness.logo_v1 fit        # fit every fold (cached, resumable), export frozen_params.json
+python -m possession.harness.run --plugin possession.harness.baseline_windows --plugin possession.harness.logo_v1 --methods raw,smooth25,smooth50,smooth125,v1_refit,v1_logo --out analysis/logo_v1
+python -m possession.harness.logo_decisions analysis/logo_v1
+python -m possession.harness.logo_stability analysis/logo_v1
+python -m possession.harness.all_metrics analysis/logo_v1
+python -m possession.harness.summarize_baselines analysis/logo_v1
+python -m possession.harness.test_logo_v1
+```
+If the harness cannot load two `--plugin` options on your setup, import `possession.harness.baseline_windows` inside a small plugin of your own.

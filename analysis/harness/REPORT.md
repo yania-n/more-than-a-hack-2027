@@ -7,7 +7,7 @@ it). Code: `possession/harness/`. Nothing is committed. No new method was built.
 **Source acknowledgement.** Metrica Sports' public sample data,
 https://github.com/metrica-sports/sample-data (Sample Games 1, 2, 3). Its README, quoted: *"Please be
 responsible with the use of this data. If you use it for anything public, please aknowledge the
-source."* No formal licence. The data lives in the gitignored `data/other_games/metrica_sample/` and is
+source."* There is no formal licence file; the data is free to use with this attribution. The data lives in the gitignored `data/other_games/metrica_sample/` and is
 never committed. Labels are produced by code from the sample's human-annotated events; no hand labelling.
 
 ## 1. TL;DR

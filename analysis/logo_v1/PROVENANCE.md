@@ -76,5 +76,7 @@ what is allowed beyond "play around" and "be responsible" is not specified, so I
 this work: (1) the raw data stays in the gitignored `data/other_games/metrica_sample/` and is never committed or uploaded;
 (2) this repo commits only aggregate results and frozen fitted parameters (bin edges, probabilities), not tracking or event
 rows; (3) the source is acknowledged in every report; (4) a derived parameter file (`frozen_params.json`) is a small set of
-fitted numbers, not a reproduction of the data, but whether using it in a competition model is "anything public" is for
-the organisers to confirm, since the rules require external data to be usable. I flag it as a question rather than assume.
+fitted numbers, not a reproduction of the data, and the team has since taken the data as free to use with attribution, so this is no longer an open question.
+
+**Note on B9 (added later):** `N_PSPEED` is re-derivable on external data after all. `analysis/logo_v1_followup/` chose 24 bins by
+held-out likelihood on the sample games; the row above describes the shipped v1 and the registered `v1_logo` run (12 bins).

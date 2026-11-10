@@ -50,7 +50,7 @@ Graded frames only, 1 s smoothed mean player speed (`step0.png` top-left, log y)
 | flight / heading window | 5 frames (0.2 s) | short enough to see a touch, long enough that jitter does not dominate. |
 | heading min move | 0.5 m per window | 2.5 m/s, above walking pace and far above noise; otherwise heading is missing. |
 | set-piece lead-in | 10 s before tag start | from the unlabeled event-triggered speed profile above. Team-blind (N/A teams handled by ignoring team). |
-| bins | |g| 4, dwell 3 (per sign, plus "none"), ball speed 5, heading 4, **player speed 12** | edges are percentiles of the pooled full-match distribution (equal mass). Player speed has 12 because with 6 bins the learned cutoff sat exactly on a bin edge; chosen from the shape of the learned emission, *before* any scoring (6/12/24 bins gave cutoffs ~1.2/1.4/1.5 m/s and D share 33/39/37%). |
+| bins | \|g\| 4, dwell 3 (per sign, plus "none"), ball speed 5, heading 4, **player speed 12** | edges are percentiles of the pooled full-match distribution (equal mass). Player speed has 12 because with 6 bins the learned cutoff sat exactly on a bin edge; chosen from the shape of the learned emission, *before* any scoring (6/12/24 bins gave cutoffs ~1.2/1.4/1.5 m/s and D share 33/39/37%). |
 | prior sojourn | 10 s for H, A and D | football reasoning: possessions and stoppages last "several to a few tens of seconds"; used only to initialise EM. |
 | transition prior | Dirichlet, 10 pseudo-transitions per row | prevents exact zeros; negligible against thousands of observed steps. |
 | emission pseudo-count | 1 per category | Laplace. |

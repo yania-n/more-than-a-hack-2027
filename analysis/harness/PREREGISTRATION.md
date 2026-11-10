@@ -155,7 +155,7 @@ deterministic, md5 of every label and prediction file from two runs.
 
 To test the harness end to end I ran it on **Game 1 only**, with `smooth50`, the trivial plugin method
 `always_home` and `v1_transfer`, 20 bootstrap draws, adapter validation skipped, writing to
-`analysis/harness_smoke/` (a separate, throwaway folder). It therefore produced Game 1 scores before the
+`analysis/harness_smoke/` (a separate, throwaway folder that was not kept). It therefore produced Game 1 scores before the
 full run, so I have seen Game 1 numbers for those methods. Nothing in this pre-registration, the
 decision rule, the harness or the labels was changed because of it; the full run (all games, all methods,
 validation on, 1,000 draws) is what counts. The smoke run confirmed the plumbing (the trivial method
