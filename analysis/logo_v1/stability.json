@@ -1,0 +1,512 @@
+{
+ "scalars": {
+  "radius (m)": {
+   "values": {
+    "logo_hold_game1": 0.9218888458485689,
+    "only_game1": 0.2761910210343571,
+    "logo_hold_game2": 0.9250131674738479,
+    "only_game2": 0.2774043099313437,
+    "logo_hold_game3": 0.276683011585456,
+    "only_game3": 1.2731121229273588,
+    "all3": 0.7578999501253452,
+    "shipped_provided": 1.913903461879167
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.9158995024225859,
+    "single-game fits (3)": 1.637242624321219,
+    "all 7 sample-game fits": 1.4821925438681516
+   }
+  },
+  "carry speed (m/s)": {
+   "values": {
+    "logo_hold_game1": 5.970876438058181,
+    "only_game1": 6.175193339170142,
+    "logo_hold_game2": 6.061264306148795,
+    "only_game2": 5.993716668664394,
+    "logo_hold_game3": 6.086899476330463,
+    "only_game3": 5.9502034783563005,
+    "all3": 6.040032057979152,
+    "shipped_provided": 6.439982328414916
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.019210129818152167,
+    "single-game fits (3)": 0.037251799485440634,
+    "all 7 sample-game fits": 0.037251575421469334
+   }
+  },
+  "edge gap[0]": {
+   "values": {
+    "logo_hold_game1": 2.1463746877881884,
+    "only_game1": 2.4079849838119127,
+    "logo_hold_game2": 2.1936920266927737,
+    "only_game2": 2.2716870342046613,
+    "logo_hold_game3": 2.3343881850241144,
+    "only_game3": 1.9978855537761244,
+    "all3": 2.2177897908560062,
+    "shipped_provided": 1.8236310153749549
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.08450734931920847,
+    "single-game fits (3)": 0.18424375632557388,
+    "all 7 sample-game fits": 0.1843758810751533
+   }
+  },
+  "edge gap[1]": {
+   "values": {
+    "logo_hold_game1": 4.5715520073511575,
+    "only_game1": 4.963266284961404,
+    "logo_hold_game2": 4.724182178965531,
+    "only_game2": 4.627963858913918,
+    "logo_hold_game3": 4.7838452285529005,
+    "only_game3": 4.49677945330951,
+    "all3": 4.692469760495937,
+    "shipped_provided": 4.412378721885723
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.04523428185167334,
+    "single-game fits (3)": 0.09933699187962873,
+    "all 7 sample-game fits": 0.0993731582820848
+   }
+  },
+  "edge gap[2]": {
+   "values": {
+    "logo_hold_game1": 8.158313135448934,
+    "only_game1": 9.036734870819497,
+    "logo_hold_game2": 8.656125225667887,
+    "only_game2": 8.011335634011147,
+    "logo_hold_game3": 8.487255851444207,
+    "only_game3": 8.326820044218158,
+    "all3": 8.439731069813378,
+    "shipped_provided": 8.54471970893772
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.05902514899241193,
+    "single-game fits (3)": 0.1212299893266088,
+    "all 7 sample-game fits": 0.1214181661476798
+   }
+  },
+  "edge dwell[0]": {
+   "values": {
+    "logo_hold_game1": 15.0,
+    "only_game1": 21.0,
+    "logo_hold_game2": 16.0,
+    "only_game2": 18.0,
+    "logo_hold_game3": 20.0,
+    "only_game3": 14.0,
+    "all3": 17.0,
+    "shipped_provided": 15.0
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.29411764705882354,
+    "single-game fits (3)": 0.3962264150943396,
+    "all 7 sample-game fits": 0.40495867768595045
+   }
+  },
+  "edge dwell[1]": {
+   "values": {
+    "logo_hold_game1": 36.0,
+    "only_game1": 53.0,
+    "logo_hold_game2": 39.0,
+    "only_game2": 42.0,
+    "logo_hold_game3": 47.0,
+    "only_game3": 32.0,
+    "all3": 41.0,
+    "shipped_provided": 37.0
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.27049180327868855,
+    "single-game fits (3)": 0.4960629921259842,
+    "all 7 sample-game fits": 0.506896551724138
+   }
+  },
+  "edge ball_speed[0]": {
+   "values": {
+    "logo_hold_game1": 2.4377915139482553,
+    "only_game1": 1.7899997850318603,
+    "logo_hold_game2": 2.0868285134649076,
+    "only_game2": 2.543264223683105,
+    "logo_hold_game3": 2.1775741852024373,
+    "only_game3": 2.318780239704952,
+    "all3": 2.222505399179384,
+    "shipped_provided": 1.9690711187134817
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.15709616403955898,
+    "single-game fits (3)": 0.33971411367122384,
+    "all 7 sample-game fits": 0.33850791396950963
+   }
+  },
+  "edge ball_speed[1]": {
+   "values": {
+    "logo_hold_game1": 4.7407602253500745,
+    "only_game1": 4.138183807609581,
+    "logo_hold_game2": 4.475767026599755,
+    "only_game2": 4.671116742612184,
+    "logo_hold_game3": 4.4365469294886895,
+    "only_game3": 4.804308118978079,
+    "all3": 4.5454082872529336,
+    "shipped_provided": 3.9679911784784156
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.06684501054164764,
+    "single-game fits (3)": 0.14679230045937197,
+    "all 7 sample-game fits": 0.14657540616767423
+   }
+  },
+  "edge ball_speed[2]": {
+   "values": {
+    "logo_hold_game1": 7.898645804153439,
+    "only_game1": 7.318431475647543,
+    "logo_hold_game2": 7.780180257414669,
+    "only_game2": 7.714425408974086,
+    "logo_hold_game3": 7.559019088294171,
+    "only_game3": 8.037730816701277,
+    "all3": 7.775717365441682,
+    "shipped_provided": 6.478530930389453
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.04384572411972725,
+    "single-game fits (3)": 0.09353459266395128,
+    "all 7 sample-game fits": 0.09309742997178903
+   }
+  },
+  "edge ball_speed[3]": {
+   "values": {
+    "logo_hold_game1": 11.700012479009525,
+    "only_game1": 11.811887986288431,
+    "logo_hold_game2": 11.763024678016484,
+    "only_game2": 11.658767300110174,
+    "logo_hold_game3": 11.750289356469366,
+    "only_game3": 11.713198903907486,
+    "all3": 11.722889526677132,
+    "shipped_provided": 10.80275671528349
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.005368325453388488,
+    "single-game fits (3)": 0.01305604713031509,
+    "all 7 sample-game fits": 0.013052166178615685
+   }
+  },
+  "edge heading[0]": {
+   "values": {
+    "logo_hold_game1": 0.012752817435074216,
+    "only_game1": 0.012923446720843302,
+    "logo_hold_game2": 0.012170275261630429,
+    "only_game2": 0.01456800584107066,
+    "logo_hold_game3": 0.013727860367830386,
+    "only_game3": 0.011391716778003852,
+    "all3": 0.012834993868690248,
+    "shipped_provided": 0.876429995168207
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.12089625088410699,
+    "single-game fits (3)": 0.24506405601608203,
+    "all 7 sample-game fits": 0.24603564091812868
+   }
+  },
+  "edge heading[1]": {
+   "values": {
+    "logo_hold_game1": 0.034497273460449625,
+    "only_game1": 0.35148010694756376,
+    "logo_hold_game2": 0.03358632187982519,
+    "only_game2": 0.35650206779759536,
+    "logo_hold_game3": 0.3545094323096305,
+    "only_game3": 0.025471292993900236,
+    "all3": 0.03986231661044417,
+    "shipped_provided": 2.7393299258876542
+   },
+   "rel_range": {
+    "LOGO folds (3)": 2.2782423473560396,
+    "single-game fits (3)": 1.353994995036819,
+    "all 7 sample-game fits": 1.9376188220837456
+   }
+  },
+  "edge heading[2]": {
+   "values": {
+    "logo_hold_game1": 3.3421274024171646,
+    "only_game1": 3.9472331673383962,
+    "logo_hold_game2": 3.2013810224060086,
+    "only_game2": 4.219046669469199,
+    "logo_hold_game3": 4.089250945524141,
+    "only_game3": 2.1505324200787412,
+    "all3": 3.5684711416776453,
+    "shipped_provided": 7.651376727068264
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.2505097384957928,
+    "single-game fits (3)": 0.6014980784427142,
+    "all 7 sample-game fits": 0.5905691527748387
+   }
+  },
+  "edge player_speed[0]": {
+   "values": {
+    "logo_hold_game1": 0.7012946412483289,
+    "only_game1": 0.6618322146161809,
+    "logo_hold_game2": 0.688308484006644,
+    "only_game2": 0.6793134942156808,
+    "logo_hold_game3": 0.6706941676626157,
+    "only_game3": 0.7306764343431714,
+    "all3": 0.6850773181617066,
+    "shipped_provided": 0.6612937444923446
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.044557366100859856,
+    "single-game fits (3)": 0.09968648122684104,
+    "all 7 sample-game fits": 0.10003941351644668
+   }
+  },
+  "edge player_speed[1]": {
+   "values": {
+    "logo_hold_game1": 0.9296872203619134,
+    "only_game1": 0.8456937159927718,
+    "logo_hold_game2": 0.8985583420263684,
+    "only_game2": 0.8908158228570828,
+    "logo_hold_game3": 0.8684900848515682,
+    "only_game3": 0.9749348928208927,
+    "all3": 0.8958639335012413,
+    "shipped_provided": 0.8642994990199806
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.06807912622764647,
+    "single-game fits (3)": 0.14299519693474008,
+    "all 7 sample-game fits": 0.14350918807286783
+   }
+  },
+  "edge player_speed[2]": {
+   "values": {
+    "logo_hold_game1": 1.1310264403320727,
+    "only_game1": 1.0189126908761683,
+    "logo_hold_game2": 1.0983784158125345,
+    "only_game2": 1.0732484624189091,
+    "logo_hold_game3": 1.0451583175014385,
+    "only_game3": 1.1991463064925045,
+    "all3": 1.0900922792904602,
+    "shipped_provided": 1.0266188732697192
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.07866831538481948,
+    "single-game fits (3)": 0.1642814758132335,
+    "all 7 sample-game fits": 0.16479119918639312
+   }
+  },
+  "edge player_speed[3]": {
+   "values": {
+    "logo_hold_game1": 1.3053065031716835,
+    "only_game1": 1.18225985857889,
+    "logo_hold_game2": 1.2733671618433826,
+    "only_game2": 1.2321627003480196,
+    "logo_hold_game3": 1.2069381997149906,
+    "only_game3": 1.3987406702575973,
+    "all3": 1.2583008290721531,
+    "shipped_provided": 1.1873549428823174
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.0779543494988285,
+    "single-game fits (3)": 0.17031592827328654,
+    "all 7 sample-game fits": 0.17109096669456475
+   }
+  },
+  "edge player_speed[4]": {
+   "values": {
+    "logo_hold_game1": 1.4759693958085942,
+    "only_game1": 1.3358652526362376,
+    "logo_hold_game2": 1.4547576143138625,
+    "only_game2": 1.3778667010067733,
+    "logo_hold_game3": 1.3593615832762953,
+    "only_game3": 1.567403374701375,
+    "all3": 1.4287638806715066,
+    "shipped_provided": 1.3437466666495896
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.08154224090737362,
+    "single-game fits (3)": 0.16225003717974867,
+    "all 7 sample-game fits": 0.16207688314025775
+   }
+  },
+  "edge player_speed[5]": {
+   "values": {
+    "logo_hold_game1": 1.6558071624344737,
+    "only_game1": 1.5150372487140702,
+    "logo_hold_game2": 1.6348604053546296,
+    "only_game2": 1.5532473439449679,
+    "logo_hold_game3": 1.5347885419997618,
+    "only_game3": 1.753769206015102,
+    "all3": 1.6095798637259868,
+    "shipped_provided": 1.5199815652932738
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.0752376258417613,
+    "single-game fits (3)": 0.14852506873731247,
+    "all 7 sample-game fits": 0.14845077501609596
+   }
+  },
+  "edge player_speed[6]": {
+   "values": {
+    "logo_hold_game1": 1.8601990542853022,
+    "only_game1": 1.7214940545887607,
+    "logo_hold_game2": 1.8376780980504313,
+    "only_game2": 1.757371503299529,
+    "logo_hold_game3": 1.740165995675663,
+    "only_game3": 1.9459160056277178,
+    "all3": 1.813632433678528,
+    "shipped_provided": 1.7522732285221572
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.06621852126359093,
+    "single-game fits (3)": 0.12410930195694408,
+    "all 7 sample-game fits": 0.12392687004561159
+   }
+  },
+  "edge player_speed[7]": {
+   "values": {
+    "logo_hold_game1": 2.07126742238113,
+    "only_game1": 1.9508715712809934,
+    "logo_hold_game2": 2.0621123797775165,
+    "only_game2": 1.989714798107239,
+    "logo_hold_game3": 1.971230524117593,
+    "only_game3": 2.140244753208477,
+    "all3": 2.0377071869391172,
+    "shipped_provided": 2.0028012981507928
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.049161318864012676,
+    "single-game fits (3)": 0.09342794337295218,
+    "all 7 sample-game fits": 0.09320104200800257
+   }
+  },
+  "edge player_speed[8]": {
+   "values": {
+    "logo_hold_game1": 2.291579797046186,
+    "only_game1": 2.227742588976747,
+    "logo_hold_game2": 2.304622337259869,
+    "only_game2": 2.2087999506316263,
+    "logo_hold_game3": 2.2188640501669723,
+    "only_game3": 2.3605112055341015,
+    "all3": 2.2719499340311375,
+    "shipped_provided": 2.315884114431217
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.03775089695604828,
+    "single-game fits (3)": 0.06696044812543786,
+    "all 7 sample-game fits": 0.06685810333457697
+   }
+  },
+  "edge player_speed[9]": {
+   "values": {
+    "logo_hold_game1": 2.5938982502705583,
+    "only_game1": 2.614615323474903,
+    "logo_hold_game2": 2.6344497555929465,
+    "only_game2": 2.529210144370329,
+    "logo_hold_game3": 2.567359648771352,
+    "only_game3": 2.6464232493410824,
+    "all3": 2.5997064893540034,
+    "shipped_provided": 2.705864400088555
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.025818094954486972,
+    "single-game fits (3)": 0.04513839386623147,
+    "all 7 sample-game fits": 0.04511750498503705
+   }
+  },
+  "edge player_speed[10]": {
+   "values": {
+    "logo_hold_game1": 3.062735842247225,
+    "only_game1": 3.197842441801558,
+    "logo_hold_game2": 3.122468423375785,
+    "only_game2": 3.044825590719295,
+    "logo_hold_game3": 3.1244516269678573,
+    "only_game3": 3.070937923335238,
+    "all3": 3.1008320347163303,
+    "shipped_provided": 3.2529219243386787
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.0198876689211733,
+    "single-game fits (3)": 0.0492881656602782,
+    "all 7 sample-game fits": 0.049305529765086474
+   }
+  },
+  "stay prob H": {
+   "values": {
+    "logo_hold_game1": 0.9502726455877021,
+    "only_game1": 0.9542828161331037,
+    "logo_hold_game2": 0.9527153861168886,
+    "only_game2": 0.9504847045635644,
+    "logo_hold_game3": 0.9523333732667544,
+    "only_game3": 0.9525002776694933,
+    "all3": 0.952480484374216,
+    "shipped_provided": 0.9350883556795211
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.0025665137293477322,
+    "single-game fits (3)": 0.0039878427619327635,
+    "all 7 sample-game fits": 0.004211687969229478
+   }
+  },
+  "stay prob A": {
+   "values": {
+    "logo_hold_game1": 0.9482232834020466,
+    "only_game1": 0.9520340431599323,
+    "logo_hold_game2": 0.9500425134137714,
+    "only_game2": 0.9510833004141654,
+    "logo_hold_game3": 0.9520600910567117,
+    "only_game3": 0.946091036908204,
+    "all3": 0.9503696919974209,
+    "shipped_provided": 0.9080698528149035
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.004038283135612475,
+    "single-game fits (3)": 0.006257534154861339,
+    "all 7 sample-game fits": 0.006283305636994677
+   }
+  },
+  "stay prob D": {
+   "values": {
+    "logo_hold_game1": 0.9616334394407249,
+    "only_game1": 0.9762576881299079,
+    "logo_hold_game2": 0.9702791153829453,
+    "only_game2": 0.9651202567867004,
+    "logo_hold_game3": 0.971411034664024,
+    "only_game3": 0.9632774535980905,
+    "all3": 0.9663887388716869,
+    "shipped_provided": 0.9748903097207197
+   },
+   "rel_range": {
+    "LOGO folds (3)": 0.010103174780828788,
+    "single-game fits (3)": 0.013406307548690499,
+    "all 7 sample-game fits": 0.015111335101898549
+   }
+  }
+ },
+ "emission_tv": {
+  "gap": {
+   "logo_mean": 0.036764164401508696,
+   "sample_fits_mean": 0.04115942556939983,
+   "vs_shipped_mean": 0.056196356082806743
+  },
+  "dwell": {
+   "logo_mean": 0.07333844110454242,
+   "sample_fits_mean": 0.08062346543912606,
+   "vs_shipped_mean": 0.1405362852653384
+  },
+  "ball_speed": {
+   "logo_mean": 0.0733752576823803,
+   "sample_fits_mean": 0.08388832945699379,
+   "vs_shipped_mean": 0.0923147909754771
+  },
+  "heading": {
+   "logo_mean": 0.040341876169524955,
+   "sample_fits_mean": 0.04026969240999858,
+   "vs_shipped_mean": 0.05635980492703048
+  },
+  "outside": {
+   "logo_mean": 0.01696983842475822,
+   "sample_fits_mean": 0.017963159279275567,
+   "vs_shipped_mean": 0.031239276129909482
+  },
+  "player_speed": {
+   "logo_mean": 0.07136234567063764,
+   "sample_fits_mean": 0.07313845766590236,
+   "vs_shipped_mean": 0.06626612784452394
+  }
+ }
+}

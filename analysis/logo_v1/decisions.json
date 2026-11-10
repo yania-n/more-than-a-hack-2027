@@ -1,0 +1,475 @@
+{
+ "raw": {
+  "method": "v1_logo",
+  "reference": "raw",
+  "direction": 1,
+  "clauses": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": true
+  },
+  "halves_fraction": 1.0,
+  "n_cells": 27,
+  "pooled_primary_asis": {
+   "point_diff": 0.368288460061205,
+   "mean_diff": 0.36893749564695655,
+   "low90": 0.34693254286448416,
+   "high90": 0.3924635878076415,
+   "p_a_better": 1.0
+  },
+  "verdict": "v1_logo wins",
+  "failing_half_cells": [],
+  "pooled_all": {
+   "primary|asis": {
+    "point_diff": 0.368288460061205,
+    "mean_diff": 0.36893749564695655,
+    "low90": 0.34693254286448416,
+    "high90": 0.3924635878076415,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed0": {
+    "point_diff": 0.36249788172126357,
+    "mean_diff": 0.3629943366373896,
+    "low90": 0.3420022507754163,
+    "high90": 0.38532251194280154,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed1": {
+    "point_diff": 0.3568401300401332,
+    "mean_diff": 0.3573799739277364,
+    "low90": 0.336830059708339,
+    "high90": 0.3797459175850525,
+    "p_a_better": 1.0
+   },
+   "S1|asis": {
+    "point_diff": 0.37318597482130905,
+    "mean_diff": 0.3734091200270677,
+    "low90": 0.3524751057440322,
+    "high90": 0.39588034989882354,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed0": {
+    "point_diff": 0.3648671613811154,
+    "mean_diff": 0.36496791612115087,
+    "low90": 0.34402498537828397,
+    "high90": 0.38625153505487936,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed1": {
+    "point_diff": 0.36533230030368413,
+    "mean_diff": 0.36552881108872276,
+    "low90": 0.3450811601683993,
+    "high90": 0.386801564513119,
+    "p_a_better": 1.0
+   },
+   "S2|asis": {
+    "point_diff": 0.27927657643282594,
+    "mean_diff": 0.27941081345529284,
+    "low90": 0.26033200206424373,
+    "high90": 0.2993828443364601,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed0": {
+    "point_diff": 0.27961872678201444,
+    "mean_diff": 0.2798977650276941,
+    "low90": 0.2612995958026598,
+    "high90": 0.29917038657426676,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed1": {
+    "point_diff": 0.2769685718655953,
+    "mean_diff": 0.2771106833407014,
+    "low90": 0.2577477467225032,
+    "high90": 0.2974360824870531,
+    "p_a_better": 1.0
+   }
+  }
+ },
+ "smooth25": {
+  "method": "v1_logo",
+  "reference": "smooth25",
+  "direction": 1,
+  "clauses": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": true
+  },
+  "halves_fraction": 1.0,
+  "n_cells": 27,
+  "pooled_primary_asis": {
+   "point_diff": 0.09654319513672045,
+   "mean_diff": 0.09686138602360954,
+   "low90": 0.07790126268701443,
+   "high90": 0.11671517840901094,
+   "p_a_better": 1.0
+  },
+  "verdict": "v1_logo wins",
+  "failing_half_cells": [],
+  "pooled_all": {
+   "primary|asis": {
+    "point_diff": 0.09654319513672045,
+    "mean_diff": 0.09686138602360954,
+    "low90": 0.07790126268701443,
+    "high90": 0.11671517840901094,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed0": {
+    "point_diff": 0.09635526370800172,
+    "mean_diff": 0.09653456296256288,
+    "low90": 0.07772545830277491,
+    "high90": 0.11436775662064931,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed1": {
+    "point_diff": 0.09549978650856422,
+    "mean_diff": 0.09554054329871352,
+    "low90": 0.07746752985885125,
+    "high90": 0.1142050525224949,
+    "p_a_better": 1.0
+   },
+   "S1|asis": {
+    "point_diff": 0.13438389009482885,
+    "mean_diff": 0.13458769872733062,
+    "low90": 0.11630088581064318,
+    "high90": 0.1535496560138587,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed0": {
+    "point_diff": 0.12927899042627888,
+    "mean_diff": 0.1295236993557587,
+    "low90": 0.11221099086738397,
+    "high90": 0.14805938251048822,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed1": {
+    "point_diff": 0.13706057173166403,
+    "mean_diff": 0.13718347989621146,
+    "low90": 0.11934026458639355,
+    "high90": 0.15559895750658867,
+    "p_a_better": 1.0
+   },
+   "S2|asis": {
+    "point_diff": 0.05465677595638394,
+    "mean_diff": 0.05465908571564269,
+    "low90": 0.03773726877970066,
+    "high90": 0.07050434207127095,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed0": {
+    "point_diff": 0.05896221864555249,
+    "mean_diff": 0.0590886753073156,
+    "low90": 0.04334472050756418,
+    "high90": 0.07461151383386068,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed1": {
+    "point_diff": 0.058869319167415245,
+    "mean_diff": 0.05884514469116925,
+    "low90": 0.042661335051930344,
+    "high90": 0.07411692803007233,
+    "p_a_better": 1.0
+   }
+  }
+ },
+ "smooth50": {
+  "method": "v1_logo",
+  "reference": "smooth50",
+  "direction": 1,
+  "clauses": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": false
+  },
+  "halves_fraction": 0.6666666666666666,
+  "n_cells": 27,
+  "pooled_primary_asis": {
+   "point_diff": 0.044694009154048774,
+   "mean_diff": 0.04496565552361383,
+   "low90": 0.027381320089685485,
+   "high90": 0.06275768662502651,
+   "p_a_better": 1.0
+  },
+  "verdict": "no clear winner (leaning v1_logo; clauses failing: e)",
+  "failing_half_cells": [
+   "game1|primary|asis",
+   "game1|primary|degraded_seed0",
+   "game1|primary|degraded_seed1",
+   "game1|S1|asis",
+   "game1|S1|degraded_seed0",
+   "game1|S1|degraded_seed1",
+   "game1|S2|asis",
+   "game1|S2|degraded_seed0",
+   "game1|S2|degraded_seed1"
+  ],
+  "pooled_all": {
+   "primary|asis": {
+    "point_diff": 0.044694009154048774,
+    "mean_diff": 0.04496565552361383,
+    "low90": 0.027381320089685485,
+    "high90": 0.06275768662502651,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed0": {
+    "point_diff": 0.04178433506334733,
+    "mean_diff": 0.0419946447211377,
+    "low90": 0.024506488293895172,
+    "high90": 0.05954684418487504,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed1": {
+    "point_diff": 0.04077880923228074,
+    "mean_diff": 0.040852446313073304,
+    "low90": 0.02441187633072035,
+    "high90": 0.05774100432310065,
+    "p_a_better": 1.0
+   },
+   "S1|asis": {
+    "point_diff": 0.0438536405742375,
+    "mean_diff": 0.0437942803024523,
+    "low90": 0.026788631566390976,
+    "high90": 0.06117802748821717,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed0": {
+    "point_diff": 0.04021664280468166,
+    "mean_diff": 0.040008316980118516,
+    "low90": 0.02301605384457789,
+    "high90": 0.057672039546697605,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed1": {
+    "point_diff": 0.04993807080166344,
+    "mean_diff": 0.04984525806939821,
+    "low90": 0.033661306987895115,
+    "high90": 0.06708973588462054,
+    "p_a_better": 1.0
+   },
+   "S2|asis": {
+    "point_diff": 0.028935185666336977,
+    "mean_diff": 0.02886500620818954,
+    "low90": 0.013461636970337202,
+    "high90": 0.04360658643267602,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed0": {
+    "point_diff": 0.03267210943498918,
+    "mean_diff": 0.032788236651595984,
+    "low90": 0.01648986158909828,
+    "high90": 0.047294248304657595,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed1": {
+    "point_diff": 0.0286077059216235,
+    "mean_diff": 0.028652920992405604,
+    "low90": 0.013594952236840489,
+    "high90": 0.04419986593670437,
+    "p_a_better": 0.999
+   }
+  }
+ },
+ "smooth125": {
+  "method": "v1_logo",
+  "reference": "smooth125",
+  "direction": 1,
+  "clauses": {
+   "a": true,
+   "b": true,
+   "c": true,
+   "d": true,
+   "e": true
+  },
+  "halves_fraction": 0.8888888888888888,
+  "n_cells": 27,
+  "pooled_primary_asis": {
+   "point_diff": 0.16333598853109743,
+   "mean_diff": 0.16332044270574558,
+   "low90": 0.14253078259534088,
+   "high90": 0.1838260571057407,
+   "p_a_better": 1.0
+  },
+  "verdict": "v1_logo wins",
+  "failing_half_cells": [
+   "game1|S1|asis",
+   "game1|S1|degraded_seed0",
+   "game1|S1|degraded_seed1"
+  ],
+  "pooled_all": {
+   "primary|asis": {
+    "point_diff": 0.16333598853109743,
+    "mean_diff": 0.16332044270574558,
+    "low90": 0.14253078259534088,
+    "high90": 0.1838260571057407,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed0": {
+    "point_diff": 0.15646566327303388,
+    "mean_diff": 0.15638805947413914,
+    "low90": 0.13538168752166702,
+    "high90": 0.17738273192587561,
+    "p_a_better": 1.0
+   },
+   "primary|degraded_seed1": {
+    "point_diff": 0.15735574699070354,
+    "mean_diff": 0.15731276445319822,
+    "low90": 0.1380382595571893,
+    "high90": 0.17688266281276135,
+    "p_a_better": 1.0
+   },
+   "S1|asis": {
+    "point_diff": 0.061294384926639155,
+    "mean_diff": 0.061105708015270176,
+    "low90": 0.0405003004773306,
+    "high90": 0.08123046811238926,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed0": {
+    "point_diff": 0.05977926842143635,
+    "mean_diff": 0.0593098667692403,
+    "low90": 0.03808394140862628,
+    "high90": 0.07961698006960267,
+    "p_a_better": 1.0
+   },
+   "S1|degraded_seed1": {
+    "point_diff": 0.07187862106483105,
+    "mean_diff": 0.07142197888676341,
+    "low90": 0.05315762362223542,
+    "high90": 0.09081355483831567,
+    "p_a_better": 1.0
+   },
+   "S2|asis": {
+    "point_diff": 0.141161179211941,
+    "mean_diff": 0.14119765877354445,
+    "low90": 0.12280598513735987,
+    "high90": 0.1589331378664061,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed0": {
+    "point_diff": 0.1377081167762881,
+    "mean_diff": 0.13788056350563863,
+    "low90": 0.1195518200165764,
+    "high90": 0.15533357922798804,
+    "p_a_better": 1.0
+   },
+   "S2|degraded_seed1": {
+    "point_diff": 0.13767946125774344,
+    "mean_diff": 0.13785092035374719,
+    "low90": 0.1200038381657722,
+    "high90": 0.1548265588890353,
+    "p_a_better": 1.0
+   }
+  }
+ },
+ "v1_refit": {
+  "method": "v1_logo",
+  "reference": "v1_refit",
+  "direction": 1,
+  "clauses": {
+   "a": false,
+   "b": false,
+   "c": false,
+   "d": true,
+   "e": false
+  },
+  "halves_fraction": 0.3333333333333333,
+  "n_cells": 27,
+  "pooled_primary_asis": {
+   "point_diff": 0.008706223156840812,
+   "mean_diff": 0.008603917942270166,
+   "low90": -0.004297923636427672,
+   "high90": 0.022080206162393288,
+   "p_a_better": 0.861
+  },
+  "verdict": "no clear winner (leaning v1_logo; clauses failing: a, b, c, e)",
+  "failing_half_cells": [
+   "game1|primary|asis",
+   "game1|primary|degraded_seed0",
+   "game1|primary|degraded_seed1",
+   "game1|S1|asis",
+   "game1|S1|degraded_seed0",
+   "game1|S1|degraded_seed1",
+   "game1|S2|asis",
+   "game1|S2|degraded_seed0",
+   "game1|S2|degraded_seed1",
+   "game2|primary|degraded_seed1",
+   "game2|S1|asis",
+   "game2|S1|degraded_seed0",
+   "game2|S1|degraded_seed1",
+   "game3|primary|degraded_seed0",
+   "game3|S1|degraded_seed0",
+   "game3|S2|asis",
+   "game3|S2|degraded_seed0",
+   "game3|S2|degraded_seed1"
+  ],
+  "pooled_all": {
+   "primary|asis": {
+    "point_diff": 0.008706223156840812,
+    "mean_diff": 0.008603917942270166,
+    "low90": -0.004297923636427672,
+    "high90": 0.022080206162393288,
+    "p_a_better": 0.861
+   },
+   "primary|degraded_seed0": {
+    "point_diff": 0.004321754939808224,
+    "mean_diff": 0.003925664349725036,
+    "low90": -0.009163603271009556,
+    "high90": 0.016672849431297414,
+    "p_a_better": 0.705
+   },
+   "primary|degraded_seed1": {
+    "point_diff": 0.0031775421292960884,
+    "mean_diff": 0.0028908223895438433,
+    "low90": -0.009025906852212278,
+    "high90": 0.014984193696392898,
+    "p_a_better": 0.653
+   },
+   "S1|asis": {
+    "point_diff": -0.005852182070573901,
+    "mean_diff": -0.0060131721283377005,
+    "low90": -0.018081363124867585,
+    "high90": 0.0062387463774357796,
+    "p_a_better": 0.21
+   },
+   "S1|degraded_seed0": {
+    "point_diff": -0.012485253362527537,
+    "mean_diff": -0.012865720670637744,
+    "low90": -0.025415736609449277,
+    "high90": -0.0005915375441812654,
+    "p_a_better": 0.041
+   },
+   "S1|degraded_seed1": {
+    "point_diff": -0.008353466691377154,
+    "mean_diff": -0.008421167958943671,
+    "low90": -0.02013153667171433,
+    "high90": 0.0025046907623125256,
+    "p_a_better": 0.111
+   },
+   "S2|asis": {
+    "point_diff": 0.005565538719804308,
+    "mean_diff": 0.0056119352897804255,
+    "low90": -0.00506631375362474,
+    "high90": 0.017355931480682804,
+    "p_a_better": 0.795
+   },
+   "S2|degraded_seed0": {
+    "point_diff": 0.005671311819992771,
+    "mean_diff": 0.005751577796623526,
+    "low90": -0.005260743098928722,
+    "high90": 0.01662227491297851,
+    "p_a_better": 0.807
+   },
+   "S2|degraded_seed1": {
+    "point_diff": 0.004086431931032364,
+    "mean_diff": 0.004048900633407939,
+    "low90": -0.006180631925594457,
+    "high90": 0.014385795512550006,
+    "p_a_better": 0.739
+   }
+  }
+ }
+}
