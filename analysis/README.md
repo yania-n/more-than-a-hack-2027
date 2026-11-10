@@ -46,3 +46,48 @@ Neither dataset is included.
   Its README says: "Please be responsible with the use of this data. If you use it for anything public,
   please aknowledge the source." There is no formal licence file; the data is free to use with that
   attribution, which this repository gives to Metrica Sports (sample-data repository above).
+
+## Rebuild everything from scratch
+For a teammate who has cloned the repository and wants the files that are not in git (caches, labels, predictions, fits).
+
+**1. Environment**
+```
+python -m venv .venv
+.venv\Scripts\activate            # Windows; on macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt -r possession/requirements.txt -r requirements-starter.txt
+```
+`requirements-starter.txt` brings `kloppy`, which loads the provided tracking and Metrica's Game 3.
+
+**2. Data (neither dataset is in the repository)**
+- Competition bundle into `data/`, as described in `DATA.md`.
+- Metrica's sample data:
+  `git clone https://github.com/metrica-sports/sample-data data/other_games/metrica_sample`
+  (the code reads `data/other_games/metrica_sample/data/Sample_Game_1..3`; credit Metrica Sports when you publish anything).
+
+**3. Run the stages in this order** (each report has its own commands, details and caveats)
+```
+# original v1 (fitted on the provided match: not rule-compliant, kept as the reference)
+python -m possession.run                                   # -> submissions/hmm_v1.csv
+
+# organizer baselines vs v1 on the three sample games (about 15-20 minutes on a laptop)
+python -m possession.harness.check_baseline_windows        # must print ALL IDENTICAL
+python -m possession.harness.run --plugin possession.harness.baseline_windows --methods raw,smooth25,smooth50,smooth125,v1_refit,v1_transfer --out analysis/harness_baselines
+python -m possession.harness.summarize_baselines analysis/harness_baselines
+python -m possession.harness.all_metrics analysis/harness_baselines
+
+# rule-compliant v1 (fits on other games only, then frozen)
+python -m possession.harness.logo_v1 fit
+python -m possession.harness.run --plugin possession.harness.baseline_windows --plugin possession.harness.logo_v1 --methods raw,smooth25,smooth50,smooth125,v1_refit,v1_logo --out analysis/logo_v1
+python -m possession.harness.logo_decisions analysis/logo_v1
+python -m possession.harness.logo_stability analysis/logo_v1
+python -m possession.harness.test_logo_v1
+
+# follow-up: N_PSPEED on external data, then the domain-shift check on the provided match
+# (exact commands in logo_v1_followup/REPORT.md)
+```
+Older stages (`diagnose_smooth50`, `hmm_v2`, `hmm_v3`, `pilot_game3`, `sync_feasibility`) are listed in `possession/README.md` and in each report.
+
+**What you should get.** Results are deterministic: the baselines' labels reproduce the organizers' files exactly, and `hmm_v1.csv`
+has md5 `83b587d7b36a665a69f2eaf88566e60b`. If a number in a report does not match, compare md5s first (see `submissions/README.md`).
+The domain-shift step writes a per-frame file into `logo_v1_followup/private/`; that folder is git-ignored on purpose and the file
+must not be published.
